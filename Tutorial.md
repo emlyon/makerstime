@@ -15,8 +15,8 @@ D’autre part, il faut modifier le réglage de la grille en cliquant sur la bo�
 Puis, sélectionner le cylindre gris dans le panneau de droite.
 Toujours à l’aide des carrés blancs, il faut changer sa base en 7.50 en largeur et en profondeur.
 ![Alt Text](https://github.com/emlyon/makerstime/blob/master/Drone%20Gifs/04.gif)
-À l’aide de la flèche noire au sommet, surélever le cylindre de 2.00 en hauteur par rapport au plan de travail.
-
+À l’aide de la flèche noire au sommet, surélever le cylindre de 2.00 en hauteur par rapport au plan de travail.  
+![Alt Text](https://github.com/emlyon/makerstime/blob/master/Drone%20Gifs/05.gif)
 
 Nous allons maintenant extruder le cylindre orange.
 
