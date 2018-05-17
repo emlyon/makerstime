@@ -12,7 +12,7 @@ Cliquer sur les rectangles blancs pour donner au cylindre, une base de 10.00 en 
 D’autre part, il faut modifier le réglage de la grille en cliquant sur la boîte située en bas à droite et à côté de 
 « Grille d’accrochage 1,0 mm» et sélectionner 0,5 mm.  
 
-![Alt Text](https://github.com/emlyon/makerstime/blob/master/Drone%20Gifs/03.gif)
+![Alt Text](https://github.com/emlyon/makerstime/blob/master/Drone%20Gifs/03-2.gif)
 
 Puis, sélectionner le cylindre gris dans le panneau de droite.  
 Toujours à l’aide des carrés blancs, il faut changer sa base en 7.50 en largeur et en profondeur.
