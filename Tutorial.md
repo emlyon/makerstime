@@ -2,8 +2,6 @@
 
 Faire glisser le cylindre orange du panneau latéral de droite sur le plan de construction.
 
-![Alt Text](https://github.com/emlyon/makerstime/blob/master/H264/Part%2001.mp4)
-
 ![Alt Text](https://github.com/emlyon/makerstime/blob/master/Drone%20Gifs/01.gif)
 
 Puis cliquer sur les rectangles blancs pour donner au cylindre, une base de 10.00 en largeur et en profondeur, la hauteur n’a pas besoin d’être modifiée.
@@ -12,20 +10,27 @@ Puis cliquer sur les rectangles blancs pour donner au cylindre, une base de 10.0
 
 D’autre part, il faut modifier le réglage de la grille en cliquant sur la boîte située à côté de 
 « Grille d’accrochage 1,0 mm» et sélectionner 0,5 mm.  
+
 ![Alt Text](https://github.com/emlyon/makerstime/blob/master/Drone%20Gifs/03.gif)
 
 Puis, sélectionner le cylindre gris dans le panneau de droite.  
 Toujours à l’aide des carrés blancs, il faut changer sa base en 7.50 en largeur et en profondeur.
+
 ![Alt Text](https://github.com/emlyon/makerstime/blob/master/Drone%20Gifs/04.gif)
+
 À l’aide de la flèche noire au sommet, surélever le cylindre de 2.00 en hauteur par rapport au plan de travail.  
+
 ![Alt Text](https://github.com/emlyon/makerstime/blob/master/Drone%20Gifs/05.gif)
+
+
+
 
 **Nous allons maintenant extruder le cylindre orange.**
 
 En maintenant le bouton gauche de la souris, sélectionner les deux cylindres.
 Ils devraient apparaître tous deux entourés d’un trait couleur cyan. 
 Appuyer sur le bouton « Aligné » ( ou bien la touche L )
-Une grille de sélection apparaît sur le rectangle au niveau du plan de travail, cliquer sur les cercles se situant au milieu des segments du rectangle.
+Une grille de sélection apparaît sur le rectangle au niveau du plan de travail,  cliquer sur les cercles se situant au milieu des segments du rectangle.  
 Le cylindre gris se situe maintenant au milieu du cylindre orange.
 
 ![Alt Text](https://github.com/emlyon/makerstime/blob/master/Drone%20Gifs/06.gif)
@@ -35,6 +40,8 @@ Sélectionner ensuite l’icône « Regrouper » en haut à droite ( ou la tou
 ![Alt Text](https://github.com/emlyon/makerstime/blob/master/Drone%20Gifs/07.gif)
 
 Le cylindre orange est maintenant creux.
+
+
 
 
 **Nous allons maintenant ajouter des aérations.**
@@ -57,7 +64,7 @@ Sélectionner les trois cylindres et cliquer de nouveau sur « Regrouper ».
 Le cylindre orange est maintenant percé de quatre ovales.
 
 
-Nous allons maintenant réaliser le bras.
+**Nous allons maintenant réaliser le bras.**
 
 Sélectionner la boîte rouge dans le panneau latéral droit.
 
