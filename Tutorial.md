@@ -9,7 +9,7 @@ Puis cliquer sur les rectangles blancs pour donner au cylindre, une base de 10.0
 ![Alt Text](https://github.com/emlyon/makerstime/blob/master/Drone%20Gifs/02.gif)
 
 D’autre part, il faut modifier le réglage de la grille en cliquant sur la boîte située à côté de 
-« Grille d’accrochage 1,0 mm» et sélectionner 0,5 mm.
+« Grille d’accrochage 1,0 mm» et sélectionner 0,5 mm.  
 ![Alt Text](https://github.com/emlyon/makerstime/blob/master/Drone%20Gifs/03.gif)
 
 Puis, sélectionner le cylindre gris dans le panneau de droite.
