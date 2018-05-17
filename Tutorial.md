@@ -1,4 +1,4 @@
-Pour réaliser le bras du drone :
+**Pour réaliser le bras du drone :
 
 Faire glisser le cylindre orange du panneau latéral de droite sur le plan de construction.
 
@@ -18,7 +18,7 @@ Toujours à l’aide des carrés blancs, il faut changer sa base en 7.50 en larg
 À l’aide de la flèche noire au sommet, surélever le cylindre de 2.00 en hauteur par rapport au plan de travail.  
 ![Alt Text](https://github.com/emlyon/makerstime/blob/master/Drone%20Gifs/05.gif)
 
-Nous allons maintenant extruder le cylindre orange.
+**Nous allons maintenant extruder le cylindre orange.
 
 En maintenant le bouton gauche de la souris, sélectionner les deux cylindres.
 Ils devraient apparaître tous deux entourés d’un trait couleur cyan. 
@@ -26,17 +26,21 @@ Appuyer sur le bouton « Aligné » ( ou bien la touche L )
 Une grille de sélection apparaît sur le rectangle au niveau du plan de travail, cliquer sur les cercles se situant au milieu des segments du rectangle.
 Le cylindre gris se situe maintenant au milieu du cylindre orange.
 
+![Alt Text](https://github.com/emlyon/makerstime/blob/master/Drone%20Gifs/06.gif)
+
 Sélectionner ensuite l’icône « Regrouper » en haut à droite ( ou la touche Ctrl + G )
+
+![Alt Text](https://github.com/emlyon/makerstime/blob/master/Drone%20Gifs/07.gif)
 
 Le cylindre orange est maintenant creux.
 
 
-Nous allons maintenant ajouter des aérations.
+**Nous allons maintenant ajouter des aérations.
 
 Par conséquent, il faut prendre le cylindre gris du panneau latéral.
 
 Grâce aux doubles flèches courbes, il est nécessaire d’effectuer une rotation de 90°, 
-afin de lui donner une hauteur de 8.00, une largeur de 5.00 et une profondeur de 20.00.
+Lui donner une hauteur de 8.00, une largeur de 5.00 et une profondeur de 20.00.
 
 Grâce à la flèche noire, le surélever de 1.00.
 
