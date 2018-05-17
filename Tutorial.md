@@ -1,13 +1,10 @@
 Pour réaliser le bras du drone :
 
-Faire glisser le cylindre orange du panneau latéral de droite sur le plan de construction, 
-puis cliquer sur les rectangles blancs pour donner au cylindre, une base de 10.00 en largeur et en profondeur, la hauteur n’a pas besoin d’être modifiée.
-
+Faire glisser le cylindre orange du panneau latéral de droite sur le plan de construction. 
 ![Alt Text](https://github.com/emlyon/makerstime/blob/master/Drone%20Gifs/01.gif)
 
-makerstime/Drone Gifs/01.gif
-
-https://github.com/emlyon/makerstime/blob/master/Drone%20Gifs/01.gif
+Puis cliquer sur les rectangles blancs pour donner au cylindre, une base de 10.00 en largeur et en profondeur, la hauteur n’a pas besoin d’être modifiée.
+![Alt Text](https://github.com/emlyon/makerstime/blob/master/Drone%20Gifs/02.gif)
 
 D’autre part, il faut modifier le réglage de la grille en cliquant sur la boîte située à côté de 
 « Grille d’accrochage 1,0 mm» et sélectionner 0,5 mm.
