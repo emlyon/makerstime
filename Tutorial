@@ -45,26 +45,22 @@ Le cylindre orange est maintenant creux.
 Par conséquent, il faut prendre le cylindre gris du panneau latéral.
 
 Grâce aux doubles flèches courbes, il est nécessaire d’effectuer une rotation de 90°, 
-Lui donner une hauteur de 8.00, une largeur de 5.00 et une profondeur de 20.00.
+Lui donner une hauteur de 14.00, une largeur de 5.00 et une profondeur de 20.00.
 
 Grâce à la flèche noire, le surélever de 1.00.
 
 Avec l’outil aligné, mettre le cylindre gris au centre du cylindre orange.
 
-Dupliquer le cylindre gris avec le bouton en haut à gauche ( ou la touche Ctrl + D )
+Sélectionner les deux cylindres et cliquer de nouveau sur « Regrouper ».
 
-Cliquer sur la flèche noire et surélever le nouveau cylindre gris de 11.00.
-
-Sélectionner les trois cylindres et cliquer de nouveau sur « Regrouper ».
-
-Le cylindre orange est maintenant percé de quatre ovales.
+Le cylindre orange est maintenant percé.
 
 
 # **Nous allons maintenant réaliser le bras.**
 
 Sélectionner la boîte rouge dans le panneau latéral droit.
 
-Après l’avoir placée sur le plan de travail, il faut lui donner une largeur de 6.50, une hauteur de 6.50 et une profondeur de 20.00.
+Après l’avoir placée sur le plan de travail, il faut lui donner une largeur de 6.00, une hauteur de 6.00 et une profondeur de 20.00.
 
 Prendre un cube gris, il est nécessaire de lui donner les dimensions suivantes : 
 3.50 en largeur, 3.50 hauteur et 10 profondeur. 
