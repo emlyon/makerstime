@@ -48,8 +48,9 @@ Grâce aux doubles flèches courbes, il est nécessaire d’effectuer une rotati
 ![Alt Text](https://github.com/emlyon/makerstime/blob/master/Drone%20Gifs/08.gif)
 
 Lui donner ensuite une hauteur de 7.00, une largeur de 6.00 et une profondeur de 20.00.
-
 Grâce à la flèche noire, le surélever de 1.00.
+
+![Alt Text](https://github.com/emlyon/makerstime/blob/master/Drone%20Gifs/09.gif)
 
 Avec l’outil aligné, mettre le cylindre gris au centre du cylindre orange.
 
