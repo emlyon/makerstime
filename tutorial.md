@@ -10,7 +10,7 @@ Cliquer sur les rectangles blancs pour donner au cylindre, une base de 10.00 en 
 ![Alt Text](https://github.com/emlyon/makerstime/blob/master/Drone%20Gifs/02.gif)
 
 D’autre part, il faut modifier le réglage de la grille en cliquant sur la boîte située en bas à droite et à côté de 
-« Grille d’accrochage 1,0 mm» et sélectionner 0,5 mm.  
+« Grille d’accrochage 1,0 mm» et sélectionner 0,25 mm.  
 
 ![Alt Text](https://github.com/emlyon/makerstime/blob/master/Drone%20Gifs/03-2.gif)
 
@@ -45,15 +45,19 @@ Le cylindre orange est maintenant creux.
 Par conséquent, il faut prendre le cylindre gris du panneau latéral.
 
 Grâce aux doubles flèches courbes, il est nécessaire d’effectuer une rotation de 90°, 
-Lui donner une hauteur de 14.00, une largeur de 5.00 et une profondeur de 20.00.
+Lui donner une hauteur de 7.00, une largeur de 6.00 et une profondeur de 20.00.
 
 Grâce à la flèche noire, le surélever de 1.00.
 
 Avec l’outil aligné, mettre le cylindre gris au centre du cylindre orange.
 
-Sélectionner les deux cylindres et cliquer de nouveau sur « Regrouper ».
+Dupliquer le cylindre
 
-Le cylindre orange est maintenant percé.
+Grâce à la flèche noire, le surélever de 10.00.
+
+Sélectionner les trois cylindres et cliquer de nouveau sur « Regrouper ».
+
+Le cylindre orange est maintenant percé de quatre trous.
 
 
 # **Nous allons maintenant réaliser le bras.**
