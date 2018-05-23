@@ -55,11 +55,15 @@ Grâce à la flèche noire, le surélever de 1.00.
 
 Avec l’outil aligné, mettre le cylindre gris au centre du cylindre orange.
 
-Dupliquer le cylindre gris avec le bouton en haut à gauche ( ou la touche Ctrl + D )
+![Alt Text](Gifs/10.gif)
 
-Grâce à la flèche noire, le surélever de 10.00.
+Dupliquer le cylindre gris avec le bouton en haut à gauche ( ou la touche Ctrl + D ) et grâce à la flèche noire, le surélever de 10.00.
+
+![Alt Text](Gifs/11.gif)
 
 Sélectionner les trois cylindres et cliquer de nouveau sur « Regrouper ».
+
+![Alt Text](Gifs/12.gif)
 
 Le cylindre orange est maintenant percé de quatre ovales.
 
@@ -71,4 +75,4 @@ Sélectionner la boîte rouge dans le panneau latéral droit.
 Après l’avoir placée sur le plan de travail, il faut lui donner une largeur de 6.00, une hauteur de 6.00 et une profondeur de 20.00.
 
 Prendre un cube gris, il est nécessaire de lui donner les dimensions suivantes :
-3.50 en largeur, 3.50 hauteur et 10 profondeur.
+3.25 en largeur, 3.25 hauteur et 10 profondeur.
