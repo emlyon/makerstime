@@ -72,7 +72,48 @@ Le cylindre orange est maintenant percé de quatre ovales.
 
 Sélectionner la boîte rouge dans le panneau latéral droit.
 
-Après l’avoir placée sur le plan de travail, il faut lui donner une largeur de 6.00, une hauteur de 6.00 et une profondeur de 20.00.
+![Alt Text](Gifs/13.gif)
+
+Après l’avoir placée sur le plan de travail, il faut lui donner une largeur de 6.50, une hauteur de 6.50 et une profondeur de 20.00.
+
+![Alt Text](Gifs/14.gif)
 
 Prendre un cube gris, il est nécessaire de lui donner les dimensions suivantes :
 3.25 en largeur, 3.25 hauteur et 10 profondeur.
+
+![Alt Text](Gifs/15.gif)
+
+Insérer le rectangle gris dans le rectangle rouge en sélectionnant les deux rectangles, puis avec l'outil "aligner", centrer le rectangle gris au bord du rectangle orange en cliquant les points noirs situés à mi-auteur, au milieu et enfin au bord gauche du rectangle rouge
+
+![Alt Text](Gifs/16.gif)
+
+Déplacer en arrière le rectangle rouge de 1.00 sans le déplacer latéralement, puis regrouper les deux rectangles.  
+(Pro tip : Presser la touche Shift après avoir cliqué avec la souris permet de verrouiller le déplacement dans une seule direction)
+
+![Alt Text](Gifs/17.gif)
+
+Maintenant, cliquer sur la forme "biseau" et la poser sur le plan de construction, effectuer ensuite à cette forme une rotation de 90° de sa base vers la gauche et une autre rotation de 90° vers le bas  sur son axe vertical.
+
+![Alt Text](Gifs/18.gif)
+
+Donner au biseau une hauteur de 13.50 et une largeur de 6.50
+
+![Alt Text](Gifs/19.gif)
+
+Faire fusionner avec l'outil "aligner" le rectangle et le biseau.
+
+![Alt Text](Gifs/20.gif)
+
+Surélever le rectangle de 13.50 pour le poser sur le biseau et regrouper les deux pièces entre elles.
+
+![Alt Text](Gifs/21.gif)
+
+Aligner cette nouvelle pièce avec le cylindre précédemment extrudé
+
+![Alt Text](Gifs/22.gif)
+
+ Déplacer la pièce de 8.25 vers la droite et fusionner l'ensemble
+
+![Alt Text](Gifs/23.gif)
+
+La pièce est maintenant terminée !

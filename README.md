@@ -10,6 +10,4 @@
 
 [Bumper on Tinkercad](https://www.tinkercad.com/things/cDSJKbKL5e3)
 
-[Custom Protections on Tinkercad](https://www.tinkercad.com/things/8Xq8L8X0xYk)
-
-Atom test
+[Custom Plates on Tinkercad](https://www.tinkercad.com/things/8Xq8L8X0xYk)
