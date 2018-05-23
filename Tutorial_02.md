@@ -1,4 +1,4 @@
-# **Pour réaliser les protections des hélices:**
+# **Pour réaliser les protections des hélices :**
 
 Télécharger la pièce suivante : [Bumper](Bumper.svg)
 

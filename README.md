@@ -2,9 +2,9 @@
 
 [Markdown Syntax](https://guides.github.com/features/mastering-markdown/)
 
-[Tutorial 01](Tutorial 01.md)
+[Tutorial 01](Tutorial_01.md)
 
-[Tutorial 02](Tutorial 02.md)
+[Tutorial 02](Tutorial_02.md)
 
 [Drone Arm on Tinkercad](https://www.tinkercad.com/things/da22oZQdvHE)
 
