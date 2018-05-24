@@ -88,7 +88,7 @@ Insérer le rectangle gris dans le rectangle rouge en sélectionnant les deux re
 ![Alt Text](Gifs/16.gif)
 
 Déplacer en arrière le rectangle rouge de 1.00 sans le déplacer latéralement, puis regrouper les deux rectangles.  
-(Pro tip : Presser la touche Shift après avoir cliqué avec la souris permet de verrouiller le déplacement dans une seule direction)
+(Pro tip : Presser la touche ⇧ SHIFT après avoir cliqué avec la souris permet de verrouiller le déplacement dans une seule direction)
 
 ![Alt Text](Gifs/17.gif)
 
