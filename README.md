@@ -2,9 +2,9 @@
 
 [Markdown Syntax](https://guides.github.com/features/mastering-markdown/)
 
-[Tutoriel 01](Tutorial_01.md)
+[Tutoriel 01 FR](Tutorial_01.md)
 
-[Tutorial 01](Tutorial_01_Eng.md)
+[Tutorial 01 ENG](Tutorial_01_Eng.md)
 
 [Tutorial 02 WIP](Tutorial_02.md)
 
