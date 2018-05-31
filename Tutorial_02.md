@@ -19,3 +19,7 @@ Nous allons maintenant mettre les deux cercles en surbrillance puis ensuite dans
 Le petit cercle est maintenant au milieu du grand cercle
 
 ![Alt Text](Gifs2/04.gif)
+
+Ajouter ensuite un carré de largeur 10,5mm et de hauteur 12mm
+
+Aligner le carré avec l'outil "Aligner" au bord à droite du cercle
