@@ -1,21 +1,21 @@
-# **Pour réaliser les protections des hélices :**
+# **Pour réaliser les protections des hélices avec Illustrator :**
 
-Télécharger la pièce suivante : [Bumper](Bumper.svg)
+Sélectionner l'outil "Elipse" dans le panneau latéral de gauche en maintenant le clic de souris sur l'icône "Rectangle" puis dans la fenêtre s'affichant cliquer sur Elipse
 
-Importer là ensuite dans Tinkercad grâce au bouton en haut à droite
+Avec un simple clic au milieu de la page blanche, entrez les dimensions 70mm par 70mm
 
-![Alt Text](Gifs2/01.gif)
+![Alt Text](Gifs2/03.gif)
 
-Régler l'épaisseur sur 3.00
+Créer ensuite un autre cercle de 65 mm par 65 mm
 
-![Alt Text](Gifs2/02.gif)
+Cliquer maintenant sur l'outil "Selectionner" dans le panneau latéral de gauche pour pouvoir manipuler la position des cercles
 
-La précision de la grille doit être réglée sur 0,25mm
+Afficher le panneau "Aligment des objets" en sélectionnant dans la barre des menus, "Fenêtre" puis dans le menu déroulant "Alignement"
 
-![Alt Text](Gifs/03-3.gif)
+Vous pouvez manipuler librement la position du panneau Aligment au-dessus de votre page
 
-Rajouter un cube rouge de 10.50 de largeur, 12 de profondeur et 8.00 de hauteur sur la partie rectangulaire de la pièce précédemment importée.
+Nous allons maintenant mettre les deux cercles en surbrillance puis ensuite dans le panneau Aligment des objets, appuyer sur le bouton "Alignement horizontal au centre " et enfin "Alignement vertical au centre"
 
-Puis le percer en son centre grâce à un cube gris de 4.00 de largeur, une profondeur supérieure à 6.00 et 3.25 de hauteur
+Le petit cercle est maintenant au milieu du grand cercle
 
-Avec un autre cube gris de 6.50 de largeur et 7.00 de profondeur, réaliser une ouverture entre les deux triangles.
+![Alt Text](Gifs2/04.gif)
