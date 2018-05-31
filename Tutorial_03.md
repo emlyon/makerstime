@@ -26,7 +26,7 @@ Puis avec "Outil Sélection direct", effacer les traits rouges à l'intérieur d
 
 Pour pouvoir découper la forme, il faut que le trait ait une épaisseur de 0,001mm
 
-![Alt Text](Gifs3/04.gif)
+![Alt Text](Gifs3/05.gif)
 
 Ajouter deux ronds rouges de 2mm par 2mm à une distance de 3,6mm l'un de l'autre
 
