@@ -1,4 +1,4 @@
-# makerstime
+# Makers' Time
 
 ## Tutorial
 
@@ -10,7 +10,7 @@
 
 [Tutorial 03 WIP](Tutorial_03.md)
 
-
+## Other
 
 [Youtube Video](https://www.youtube.com/watch?v=8G48RRe7nHA)
 
