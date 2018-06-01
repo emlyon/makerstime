@@ -1,4 +1,4 @@
-[Markdown Syntax](https://guides.github.com/features/mastering-markdown/)+
+[Markdown Syntax](https://guides.github.com/features/mastering-markdown/)
 
 [Tinkercad](https://www.tinkercad.com/)
 
