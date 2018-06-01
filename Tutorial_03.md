@@ -1,4 +1,4 @@
-# **Pour personnaliser le Drone :**
+# **Pour Personnaliser le Drone avec la Machine de Gravure Laser:**
 
 Aller sur le site the [Noun Project](https://thenounproject.com)
 
@@ -18,7 +18,8 @@ Maintenant importer l'image dans Illustrator
 
 Pour la découpe laser, nous avons besoin de créer un contour rouge
 
-Dans le cas présent, nous allons dupliquer le calque avec l'image,
+Dans le cas présent, nous selectionner la forme puis aller dans le menu Objet > Tracé > Décalage,
+Choisir 1 mm
 Selectionner contours puis rouge dans le panneau en bas à gauche
 Puis avec "Outil Sélection direct", effacer les traits rouges à l'intérieur de l'image
 
@@ -28,6 +29,6 @@ Pour pouvoir découper la forme, il faut que le trait ait une épaisseur de 0,00
 
 ![Alt Text](Gifs3/05.gif)
 
-Ajouter deux ronds rouges de 2mm par 2mm à une distance de 3,6mm l'un de l'autre
+Ajouter deux ronds rouges de 2 mm par 2 mm à une distance de 26 mm l'un de l'autre
 
 Le fichier peut maintenant être enregistré sur une clef USB / Carte SD et inséré dans l'ordinateur relié à la machine
