@@ -4,7 +4,7 @@
 
 Slide the orange cylinder from the right side panel onto the workplane.
 
-![Alt Text](Gifs/01.gif)
+![Alt Text](Gifs/01-2.gif)
 
 Click on the white rectangles to give the cylinder, a base of 10.00 mm in width and depth, the height does not need to be changed.
 
