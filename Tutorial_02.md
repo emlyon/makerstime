@@ -28,8 +28,14 @@ Ajouter ensuite un carré de largeur 7mm et de hauteur 50mm
 Aligner le carré avec l'outil "Aligner" au bord à droite du grand cercle, 
 Pour pouvoir effectuer cette action sans modifier la position des cercles il faut afficher les options supplémentaires d'alignement.
 Il faut pour cela, cliquer sur le bouton en haut à droite dans la fêntre de l'outil alignement :
-
-<img src="Gifs2/Options.svg" width="50" height="50"> 
+<img src="Gifs2/Options.svg">{:style="float: right;margin-right: 7px;margin-top: 7px;"}
 
 Selectionner en bas à droite "Aligner sur :" et cliquer sur "Aligner sur un objet clef"  
 Mettre en surbrillance petit cercle puis appuyer sur les boutons "Alignement horizontal à gauche" puis "Alignement vertical au centre"
+
+Nous allons maintenant utiliser le Pathfinder
+Il se situe par defaut juste à côté de Alignement dans la boite de dialogue
+(Dans le cas contraire le faire apparaitre en sélectionnant dans la barre des menus en haut de l'écran,  
+"Fenêtre" puis dans le menu déroulant "Pathfinder")  
+
+Mettre en surbrillance le cercle et le rectangle gâce au Shift clic puis dans la fenêtre Pathfinder utiliser la fonction "Soustraire"
