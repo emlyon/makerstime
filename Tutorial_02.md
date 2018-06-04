@@ -1,4 +1,5 @@
-# **Pour réaliser les protections des hélices  avec Illustrator et Tinkercad :**
+# **Pour réaliser les protections des hélices  
+avec Illustrator et Tinkercad :**
 
 Sélectionner l'outil "Elipse" dans le panneau latéral de gauche en maintenant le clic de souris sur l'icône "Rectangle" puis dans la fenêtre s'affichant cliquer sur Elipse (Ou appuyer sur la touche L du clavier)
 (Si le "Panneau Outils" n'est pas affiché, aller dans le menu du haut et cliquer sur Fênetre > Outils > Par défaut) 
