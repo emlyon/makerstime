@@ -27,7 +27,7 @@ Ajouter ensuite un carré de largeur 7mm et de hauteur 50mm
 
 Aligner le carré avec l'outil "Aligner" au bord à droite du grand cercle, 
 Pour pouvoir effectuer cette action sans modifier la position des cercles il faut afficher les options supplémentaires d'alignement.
-Il faut pour cela, cliquer sur le bouton en haut à droite dans la fêntre de l'outil alignement <img src="Gifs2/Options.svg" style="float" width="25" height="25"
+Il faut pour cela, cliquer sur le bouton en haut à droite dans la fêntre de l'outil alignement <img src="Gifs2/Options.svg" style="float : right;margin-right: 7px;margin-top: 7px;" width="25" height="25">
 
 Selectionner en bas à droite "Aligner sur :" et cliquer sur "Aligner sur un objet clef"  
 Mettre en surbrillance petit cercle puis appuyer sur les boutons "Alignement horizontal à gauche" puis "Alignement vertical au centre"
