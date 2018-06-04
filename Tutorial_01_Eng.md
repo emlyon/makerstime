@@ -87,7 +87,7 @@ Insert the gray rectangle in the red rectangle by selecting the two rectangles, 
 
 ![Alt Text](Gifs/16.gif)
 
-Move back the red rectangle of 1.00 mm without moving it laterally, then group the two rectangles together.
+Move back the red rectangle of 1.00 mm without moving it laterally, then group the two rectangles together.  
 (ProTip: Pressing the ⇧ SHIFT key after clicking with the mouse locks the movement in one direction )
 
 ![Alt Text](Gifs/17.gif)
