@@ -1,5 +1,7 @@
 # **Pour réaliser les protections des hélices avec Illustrator et Tinkercad :**
 
+## Étape 1 : Illustrator
+
 Sélectionner l'outil "Elipse" dans le panneau latéral de gauche en maintenant le clic de souris sur l'icône "Rectangle" puis dans la fenêtre s'affichant cliquer sur Elipse (Ou en appuyant sur la touche L du clavier)  
 (Si le "Panneau Outils" n'est pas affiché, aller dans le menu du haut et cliquer sur Fênetre > Outils > Par défaut) 
 
@@ -7,9 +9,13 @@ Faire un simple clic au milieu de la page blanche pour faire apparaitre une boî
 Dans celle-ci entrer les dimensions 70mm largeur et 70mm hauteur.  
 (L'icône à droite des dimensions permet de lier les proportions)
 
+Modidfier l'apparence du cercle grâce aux options en haut à gauche du document.  
+A côté de "Ellipse" cliquer sur la première boite et choisir le carré de couleur noir, dans la boite située immédiatement à droite selectionner le carré barré en rouge cela permet d'obtenir un contour transparent.
+
 ![Alt Text](Gifs2/03.gif)
 
-En suivant la même méthode, créer un autre cercle de 65 mm par 65 mm  
+En suivant la même méthode, créer un autre cercle de 65 mm par 65 mm
+Cette fois-ci changer la couleur du cercle en selectionner le carré de couleur Blanc et dans la boite située immédiatement à droite selectionner le carré barré en rouge.
 
 Cliquer maintenant sur l'outil "Selectionner" dans le panneau latéral de gauche (Ou en appuyant sur la touche V du clavier) pour pouvoir manipuler la position des cercles.
 
@@ -37,4 +43,32 @@ Il se situe par defaut juste à côté de Alignement dans la boite de dialogue
 (Dans le cas contraire le faire apparaitre en sélectionnant dans la barre des menus en haut de l'écran,  
 "Fenêtre" puis dans le menu déroulant "Pathfinder")  
 
-Mettre en surbrillance le cercle et le rectangle gâce au Shift clic puis dans la fenêtre Pathfinder utiliser la fonction "Soustraire"
+Mettre en surbrillance le cercle et le rectangle gâce au ⇧ SHIFT clic puis dans la fenêtre Pathfinder utiliser la fonction "Soustraction"
+
+Le cercle blanc comporte maintenant une indentation à gauche
+
+Enregistrer le document en allant dans Fichier > Enregistrer sous...
+
+Dans la boîte de dialogue vous pouvez librement nommer et choisir où enregistrer votre fichier.  
+Il faut néanmoin selectionner le type de fichier SVG dans le menu déroulant à côté de "Format". Puis appuyer sur OK
+
+Une autre boîte de dialogue apparait, laiser le Profil SVG en SVG 1.1 et il n'est pas nessesaire de modifier les autres options. Cliquer sur OK
+
+## Étape 2 : Tinkercad
+
+Importer votre fichier dans Tinkercad grâce au bouton en haut à droite
+
+Dans les dimensions du plan de travail, cliquer sur "Artboard" puis entrer 100mm en Longueur et Largeur
+
+![Alt Text](Gifs2/01.gif)
+
+Modifier la hauteur en 2mm
+
+Rajouter un cube de 7mm de hauteur, 7mm de profondeur par 10mm de largeur
+
+Réaliser un perçage de 3,5mm de hauteur par 6,5mm de largeur et 8º
+d'inclinaison 
+
+Selectionner les trois parties et les regrouppées 
+
+Exporter la pièces en selectionnant "Exporter" puis STL
