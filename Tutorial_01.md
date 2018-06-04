@@ -1,5 +1,8 @@
 # **Pour réaliser le bras du Drone avec Tinkercad:**
 
+Aller sur le site [Tinkercad](https://www.tinkercad.com/)
+Créer votre compte puis sur le dashboard selectionner "Créer une conception"
+
 ## **Étape 1 : Créer un cylindre**
 
 Faire glisser le cylindre orange du panneau latéral de droite sur le plan de construction.
