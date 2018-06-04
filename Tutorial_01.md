@@ -80,12 +80,12 @@ Prendre un cube gris, il est nécessaire de lui donner les dimensions suivantes 
 
 ![Alt Text](Gifs/15.gif)
 
-Insérer le rectangle gris dans le rectangle rouge en sélectionnant les deux rectangles.  Ensuite, avec l'outil "aligner", centrer le rectangle gris au bord du rectangle orange en cliquant sur les points noirs situés à mi-hauteur, au milieu et enfin au bord gauche du rectangle rouge.
+Insérer le rectangle gris dans le rectangle rouge en sélectionnant les deux rectangles.  Ensuite, avec l'outil "aligner", centrer le rectangle gris au bord du rectangle rouge en cliquant sur les points noirs situés à mi-hauteur, au milieu et enfin au bord gauche du rectangle rouge.
 
 ![Alt Text](Gifs/16.gif)
 
 Déplacer vers arrière le rectangle rouge de 1,00 mm sans déplacement latéralement, puis regrouper les deux rectangles.  
-(Pro tip : Presser la touche ⇧ SHIFT après avoir cliqué avec la souris permet de verrouiller le déplacement dans une seule direction)
+(Astuce : Presser la touche ⇧ SHIFT après avoir cliqué avec la souris permet de verrouiller le déplacement dans une seule direction)
 
 ![Alt Text](Gifs/17.gif)
 
@@ -113,4 +113,4 @@ Aligner cette nouvelle pièce avec le cylindre précédemment extrudé.
 
 ![Alt Text](Gifs/23.gif)
 
-La pièce est maintenant terminée !
+La pièce est maintenant terminée et prête à être imprimée !
