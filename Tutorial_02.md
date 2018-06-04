@@ -1,15 +1,15 @@
 # **Pour réaliser les protections des hélices avec Illustrator et Tinkercad :**
 
-Sélectionner l'outil "Elipse" dans le panneau latéral de gauche en maintenant le clic de souris sur l'icône "Rectangle" puis dans la fenêtre s'affichant cliquer sur Elipse (Ou en appuyant sur la touche L du clavier)
+Sélectionner l'outil "Elipse" dans le panneau latéral de gauche en maintenant le clic de souris sur l'icône "Rectangle" puis dans la fenêtre s'affichant cliquer sur Elipse (Ou en appuyant sur la touche L du clavier)  
 (Si le "Panneau Outils" n'est pas affiché, aller dans le menu du haut et cliquer sur Fênetre > Outils > Par défaut) 
 
 Faire un simple clic au milieu de la page blanche pour faire apparaitre une boîte de dialogue.  
-Dans celle-ci entrer les dimensions 70mm largeur et 70mm hauteur.
+Dans celle-ci entrer les dimensions 70mm largeur et 70mm hauteur.  
 (L'icône à droite des dimensions permet de lier les proportions)
 
 ![Alt Text](Gifs2/03.gif)
 
-En suivant la même méthode, créer un autre cercle de 65 mm par 65 mm
+En suivant la même méthode, créer un autre cercle de 65 mm par 65 mm  
 
 Cliquer maintenant sur l'outil "Selectionner" dans le panneau latéral de gauche (Ou en appuyant sur la touche V du clavier) pour pouvoir manipuler la position des cercles
 
