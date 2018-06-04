@@ -13,7 +13,7 @@ Click on the white rectangles to give the cylinder, a base of 10.00 mm in width 
 On the other hand, you have to change the setting of the grid by clicking on the box located at the bottom right and next to
 "Snap grid 1.0 mm" and select 0.25 mm.
 
-![Alt Text](Gifs/03-3.gif)
+![Alt Text](Gifs/03-4.gif)
 
 Then, select the gray cylinder in the right panel.
 Also, again using the white squares, it is necessary to change its base in 7.50 mm in width and 7.50 mm in depth.
