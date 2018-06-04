@@ -83,24 +83,24 @@ Take a gray cube, it is necessary to give it the following dimensions:
 
 ![Alt Text](Gifs/15.gif)
 
-Insert the gray rectangle in the red rectangle by selecting the two rectangles, then with the "align" tool, center the gray rectangle at the edge of the orange rectangle by clicking the black spots located mid-height, middle and finally at the left edge red rectangle.
+Insert the gray rectangle in the red rectangle by selecting the two rectangles, then with the "align" tool, center the gray rectangle at the edge of the red rectangle by clicking the black spots located mid-height, middle and finally at the left edge red rectangle.
 
 ![Alt Text](Gifs/16.gif)
 
 Move back the red rectangle of 1.00 mm without moving it laterally, then group the two rectangles together.
-(Pro tip: Pressing the ⇧ SHIFT key after clicking with the mouse locks the movement in one direction )
+(ProTip: Pressing the ⇧ SHIFT key after clicking with the mouse locks the movement in one direction )
 
 ![Alt Text](Gifs/17.gif)
 
-Now, click on the shape "bevel" and put it on the workplane, then perform on this form a 90 ° rotation of its base to the left and another rotation of 90 ° down on its vertical axis.
+Now, click on the shape "wedge" and put it on the workplane, then perform on this form a 90 ° rotation of its base to the left and another rotation of 90 ° down on its vertical axis.
 
 ![Alt Text](Gifs/18.gif)
 
-Give the bevel a height of 13.50 mm and a width of 6.50 mm.
+Give the wedge a height of 13.50 mm and a width of 6.50 mm.
 
 ![Alt Text](Gifs/19.gif)
 
-Merge with the tool "align" the rectangle and the bevel.
+Merge with the tool "align" the rectangle and the wedge.
 
 ![Alt Text](Gifs/20.gif)
 
@@ -116,4 +116,5 @@ Move the 8.25 mm piece to the right and merge the set.
 
 ![Alt Text](Gifs/23.gif)
 
-Now you have a functional mechanical part !
+Congratulation !
+Now you are ready to 3D Print your part !
