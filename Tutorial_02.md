@@ -13,7 +13,7 @@ Sélectionner l'outil "Elipse" dans le panneau latéral de gauche en maintenant 
 Puis dans la fenêtre s'affichant cliquer sur Elipse (Ou en appuyant sur la touche L du clavier)  
 (Si le "Panneau Outils" n'est pas affiché, aller dans le menu du haut et cliquer sur Fênetre > Outils > Par défaut)
 
-Faire un simple clic au milieu de la page blanche pour faire apparaitre une boîte de dialogue.  
+Faire un simple clic sur la page blanche pour faire apparaitre une boîte de dialogue.  
 Dans celle-ci entrer les dimensions 70mm largeur et 70mm hauteur.  
 (L'icône à droite des dimensions permet de lier les proportions)
 <img src="Gifs2/Ellipse_Box.png">
@@ -41,7 +41,7 @@ Appuyer sur le bouton "Alignement horizontal au centre " et enfin "Alignement ve
 
 ![Alt Text](Gifs2/08.gif)
 
-Le petit cercle est maintenant au milieu du grand cercle
+Le petit cercle blanc est maintenant au milieu du grand cercle noir.
 
 ### Carré, Alignement avancé et Pathfinder
 
@@ -52,16 +52,20 @@ Pour pouvoir effectuer cette action sans modifier la position des cercles il fau
 Il faut pour cela, cliquer sur le bouton en haut à droite dans la fêntre de l'outil alignement <img src="Gifs2/Options.svg" style="float : right;margin-right: 7px;" width="20" height="20">
 Choisir "Afficher les options"
 Une rangée d'icones supplémentaire s'affiche :
+
 <img src="Gifs2/Alignement_Box.png">
 
 Selectionner en maintenant le clic gauche de la souris, le grand cercle noir et le rectangle.  
 Choisir ensuite en bas à droite de la boite d'Alignement "Aligner sur :" et cliquer sur "Aligner sur un objet clef"  
-Mettre en surbrillance le grand cercle noir puis appuyer sur les boutons "Alignement horizontal à gauche" puis "Alignement vertical au centre"
+Mettre en surbrillance le grand cercle noir puis appuyer sur les boutons  
+"Alignement horizontal à gauche" puis "Alignement vertical au centre"
 
 ![Alt Text](Gifs2/09.gif)
 
-Nous allons maintenant utiliser le Pathfinder
-Il se situe par defaut juste à côté de Alignement dans la boite de dialogue.  
+Nous allons maintenant utiliser le Pathfinder afin de soustraire le carré au cercle blanc.  
+Le Pathfinder est similaire à la fonction "Groupper" dans Tinkercad.   
+
+Le Pathfinder se situe par defaut juste à côté de Alignement dans la boite de dialogue.
 (Dans le cas contraire, faire apparaitre le Pathfinder en sélectionnant dans la barre des menus en haut de l'écran,  
 "Fenêtre" puis dans le menu déroulant "Pathfinder")  
 
@@ -104,7 +108,7 @@ Aligner les 3 pièces sur la partie plate du cercle grâce à l'outil "Aligner" 
 ![Alt Text](Gifs2/14.gif)
 
 Prendre le cube de perçage, le rallonger de 3,00mm.
-Le surelever de 1,50mm et de 8º d'inclinaison.
+Le surelever de 1,50mm et lui donner une inclinaison de 8º vers l'extérieur.  
 Pour pouvoir modifier l'inclinaison dégreés par degrées, il faut après avoir cliquer sur la double fleche, maintenir le clic gauche de la souris enfoncé jusqu'à la roue bleu au-dessus de la pièce.
 
 ![Alt Text](Gifs2/15.gif)
