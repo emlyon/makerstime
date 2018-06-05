@@ -4,27 +4,30 @@
 
 ### Éllipses et Alignement
 
-Pour commencer, créer un nouveau plan de travail avec comme dimensions 100mm de largeur par 100mm de hauteur, vérifier que les unitées sont en Millimètres, dans "Avancées" choisir "Effet de pixellisation" "Elevés 300 ppp" et décocher l'option "Aligner les nouveaux objets sur la grille en pixels "
+Pour commencer, créer un nouveau plan de travail avec comme dimensions 100mm de largeur par 100mm de hauteur,  
+vérifier que les unitées sont en Millimètres, dans "Avancées" choisir "Effet de pixellisation" "Elevés 300 ppp" et décocher l'option "Aligner les nouveaux objets sur la grille en pixels "
 
 ![Alt Text](Gifs2/05.gif)
 
-Sélectionner l'outil "Elipse" dans le panneau latéral de gauche en maintenant le clic de souris sur l'icône "Rectangle" puis dans la fenêtre s'affichant cliquer sur Elipse (Ou en appuyant sur la touche L du clavier)  
+Sélectionner l'outil "Elipse" dans le panneau latéral de gauche en maintenant le clic de souris sur l'icône "Rectangle".  
+Puis dans la fenêtre s'affichant cliquer sur Elipse (Ou en appuyant sur la touche L du clavier)  
 (Si le "Panneau Outils" n'est pas affiché, aller dans le menu du haut et cliquer sur Fênetre > Outils > Par défaut)
 
 Faire un simple clic au milieu de la page blanche pour faire apparaitre une boîte de dialogue.  
 Dans celle-ci entrer les dimensions 70mm largeur et 70mm hauteur.  
 (L'icône à droite des dimensions permet de lier les proportions)
-<img src="Gifs2/Ellipse.png">
+<img src="Gifs2/Ellipse_Box.png">
 
 Modidfier l'apparence du cercle grâce aux options en haut à gauche du document.  
 A côté de "Ellipse" cliquer sur la première boite et choisir le carré de couleur noir, dans la boite située immédiatement à droite selectionner le carré barré en rouge cela permet d'obtenir un contour transparent.
 
 ![Alt Text](Gifs2/06.gif)
 
-En suivant la même méthode, créer un autre cercle de 65 mm par 65 mm
+En suivant la même méthode, créer un autre cercle de 65 mm par 65 mm.  
 Cette fois-ci changer la couleur du cercle en selectionner le carré de couleur Blanc et dans la boite située immédiatement à droite selectionner le carré barré en rouge.
 
-Cliquer maintenant sur l'outil "Selectionner" dans le panneau latéral de gauche (Ou en appuyant sur la touche V du clavier) pour pouvoir selectionner et manipuler la position des cercles librement.
+Cliquer maintenant sur l'outil "Selectionner" dans le panneau latéral de gauche pour pouvoir selectionner et manipuler la position des cercles librement.  
+(Ou en appuyant sur la touche V du clavier)
 
 ![Alt Text](Gifs2/07.gif)
 
@@ -34,7 +37,7 @@ Afficher le panneau "Aligment des objets" en sélectionnant dans la barre des me
 <img src="Gifs2/Alignement_Simple_Box.png">
 
 Nous allons maintenant mettre les deux cercles en surbrillance puis ensuite dans le panneau "Aligment des objets".  
-Appuyer sur le bouton "Alignement horizontal au centre " et enfin "Alignement vertical au centre"
+Appuyer sur le bouton "Alignement horizontal au centre " et enfin "Alignement vertical au centre".
 
 ![Alt Text](Gifs2/08.gif)
 
@@ -44,22 +47,22 @@ Le petit cercle est maintenant au milieu du grand cercle
 
 Ajouter ensuite un carré de largeur 7mm et de hauteur 50mm
 
-Aligner le carré avec l'outil "Aligner" au bord à droite du grand cercle noir,
-Pour pouvoir effectuer cette action sans modifier la position des cercles il faut afficher les options supplémentaires d'alignement.
+Aligner le carré avec l'outil "Aligner" au bord à droite du grand cercle noir.  
+Pour pouvoir effectuer cette action sans modifier la position des cercles il faut afficher les options supplémentaires d'alignement.  
 Il faut pour cela, cliquer sur le bouton en haut à droite dans la fêntre de l'outil alignement <img src="Gifs2/Options.svg" style="float : right;margin-right: 7px;" width="20" height="20">
 Choisir "Afficher les options"
 Une rangée d'icones supplémentaire s'affiche :
 <img src="Gifs2/Alignement_Box.png">
 
-Selectionner en maintenant le clic de la souris, le grand cercle noir et le rectangle
+Selectionner en maintenant le clic gauche de la souris, le grand cercle noir et le rectangle.  
 Choisir ensuite en bas à droite de la boite d'Alignement "Aligner sur :" et cliquer sur "Aligner sur un objet clef"  
 Mettre en surbrillance le grand cercle noir puis appuyer sur les boutons "Alignement horizontal à gauche" puis "Alignement vertical au centre"
 
 ![Alt Text](Gifs2/09.gif)
 
 Nous allons maintenant utiliser le Pathfinder
-Il se situe par defaut juste à côté de Alignement dans la boite de dialogue
-(Dans le cas contraire le faire apparaitre en sélectionnant dans la barre des menus en haut de l'écran,  
+Il se situe par defaut juste à côté de Alignement dans la boite de dialogue.  
+(Dans le cas contraire, faire apparaitre le Pathfinder en sélectionnant dans la barre des menus en haut de l'écran,  
 "Fenêtre" puis dans le menu déroulant "Pathfinder")  
 
 Mettre en surbrillance le cercle et le rectangle gâce au ⇧ SHIFT clic puis dans la fenêtre Pathfinder utiliser la fonction "Soustraction"
@@ -88,19 +91,26 @@ Dans options d'importation, cliquer sur "Artboard" puis entrer 100mm en Longueur
 
 ![Alt Text](Gifs2/12.gif)
 
-Rajouter un cube de 7mm de hauteur, 7mm de profondeur par 10mm de largeur
+Rajouter un cube de 7,00mm de hauteur, 7,00mm de profondeur par 10,00mm de largeur
 
-Rajouter un cube de perçage de 3,5mm de hauteur par 6,5mm de largeur
+Rajouter un cube de perçage de 3,50mm de hauteur par 6,50mm de largeur
 
-Modifier la hauteur de la pièce importée en 2mm
+Modifier la hauteur de la pièce importée en 2,00mm
 
 ![Alt Text](Gifs2/13.gif)
 
 Aligner les 3 pièces sur la partie plate du cercle grâce à l'outil "Aligner" comme vu dans le tutoriel précédent.
 
-Prendre le cube de perçage, le rallonger de 4mm
-Le surelever de 2mm et de 8º d'inclinaison
+![Alt Text](Gifs2/14.gif)
+
+Prendre le cube de perçage, le rallonger de 3,00mm.
+Le surelever de 1,50mm et de 8º d'inclinaison.
+Pour pouvoir modifier l'inclinaison dégreés par degrées, il faut après avoir cliquer sur la double fleche, maintenir le clic gauche de la souris enfoncé jusqu'à la roue bleu au-dessus de la pièce.
+
+![Alt Text](Gifs2/15.gif)
 
 Selectionner les trois parties et les regrouppées
 
 Exporter la pièces en selectionnant "Exporter" puis STL pour pouvoir l'imprimer en 3D.
+
+![Alt Text](Gifs2/16.gif)
