@@ -2,6 +2,8 @@
 
 ## Étape 1 : Illustrator
 
+### Éllipses et Alignement
+
 Pour commencer, créer un nouveau plan de travail avec comme dimensions 100mm de largeur par 100mm de hauteur, vérifier que les unitées sont en Millimètres, dans "Avancées" choisir "Effet de pixellisation" "Elevés 300 ppp" et décocher l'option "Aligner les nouveaux objets sur la grille en pixels "
 
 ![Alt Text](Gifs2/05.gif)
@@ -38,17 +40,22 @@ Appuyer sur le bouton "Alignement horizontal au centre " et enfin "Alignement ve
 
 Le petit cercle est maintenant au milieu du grand cercle
 
+### Carré, Alignement avancé et Pathfinder
 
 Ajouter ensuite un carré de largeur 7mm et de hauteur 50mm
 
-Aligner le carré avec l'outil "Aligner" au bord à droite du grand cercle,
+Aligner le carré avec l'outil "Aligner" au bord à droite du grand cercle noir,
 Pour pouvoir effectuer cette action sans modifier la position des cercles il faut afficher les options supplémentaires d'alignement.
 Il faut pour cela, cliquer sur le bouton en haut à droite dans la fêntre de l'outil alignement <img src="Gifs2/Options.svg" style="float : right;margin-right: 7px;" width="20" height="20">
-Une rangée d'options supplémentaire s'affiche :
+Choisir "Afficher les options"
+Une rangée d'icones supplémentaire s'affiche :
 <img src="Gifs2/Alignement_Box.png">
 
-Selectionner en bas à droite "Aligner sur :" et cliquer sur "Aligner sur un objet clef"  
-Mettre en surbrillance petit cercle puis appuyer sur les boutons "Alignement horizontal à gauche" puis "Alignement vertical au centre"
+Selectionner en maintenant le clic de la souris, le grand cercle noir et le rectangle
+Choisir ensuite en bas à droite de la boite d'Alignement "Aligner sur :" et cliquer sur "Aligner sur un objet clef"  
+Mettre en surbrillance le grand cercle noir puis appuyer sur les boutons "Alignement horizontal à gauche" puis "Alignement vertical au centre"
+
+![Alt Text](Gifs2/09.gif)
 
 Nous allons maintenant utiliser le Pathfinder
 Il se situe par defaut juste à côté de Alignement dans la boite de dialogue
@@ -57,32 +64,43 @@ Il se situe par defaut juste à côté de Alignement dans la boite de dialogue
 
 Mettre en surbrillance le cercle et le rectangle gâce au ⇧ SHIFT clic puis dans la fenêtre Pathfinder utiliser la fonction "Soustraction"
 
+![Alt Text](Gifs2/10.gif)
+
 Le cercle blanc comporte maintenant une indentation à gauche
 
-Enregistrer le document en allant dans Fichier > Enregistrer sous...
+### Sauvegarde
+
+Enregistrer le document en selectionnant  Fichier puis Enregistrer sous...
 
 Dans la boîte de dialogue vous pouvez librement nommer et choisir où enregistrer votre fichier.  
-Il faut néanmoin selectionner le type de fichier SVG dans le menu déroulant à côté de "Format". Puis appuyer sur OK
+Il faudra néanmoin selectionner le type de fichier SVG dans le menu déroulant à côté de "Format".  
+Puis appuyer sur OK
 
 Une autre boîte de dialogue apparait, laiser le Profil SVG en SVG 1.1 et il n'est pas nessesaire de modifier les autres options. Cliquer sur OK
+
+![Alt Text](Gifs2/11.gif)
 
 ## Étape 2 : Tinkercad
 
 Importer votre fichier dans Tinkercad grâce au bouton en haut à droite
 
-Dans les dimensions du plan de travail, cliquer sur "Artboard" puis entrer 100mm en Longueur et Largeur
+Dans options d'importation, cliquer sur "Artboard" puis entrer 100mm en Longueur et 100mm en Largeur
 
-![Alt Text](Gifs2/01.gif)
-
-Modifier la hauteur en 2mm
+![Alt Text](Gifs2/12.gif)
 
 Rajouter un cube de 7mm de hauteur, 7mm de profondeur par 10mm de largeur
 
-Réaliser un perçage de 3,5mm de hauteur par 6,5mm de largeur et 8º
-d'inclinaison
+Rajouter un cube de perçage de 3,5mm de hauteur par 6,5mm de largeur
+
+Modifier la hauteur de la pièce importée en 2mm
+
+![Alt Text](Gifs2/13.gif)
+
+Aligner les 3 pièces sur la partie plate du cercle grâce à l'outil "Aligner" comme vu dans le tutoriel précédent.
+
+Prendre le cube de perçage, le rallonger de 4mm
+Le surelever de 2mm et de 8º d'inclinaison
 
 Selectionner les trois parties et les regrouppées
 
-Exporter la pièces en selectionnant "Exporter" puis STL.
-
-Double cliquer sur le STL
+Exporter la pièces en selectionnant "Exporter" puis STL pour pouvoir l'imprimer en 3D.
