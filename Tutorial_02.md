@@ -49,13 +49,13 @@ Ajouter ensuite un carré de largeur 7mm et de hauteur 50mm
 
 Aligner le carré avec l'outil "Aligner" au bord à droite du grand cercle noir.  
 Pour pouvoir effectuer cette action sans modifier la position des cercles il faut afficher les options supplémentaires d'alignement.  
-Il faut pour cela, cliquer sur le bouton en haut à droite dans la fêntre de l'outil alignement <img src="Gifs2/Options.svg" style="float : right;margin-right: 7px;" width="20" height="20">
+Il faut pour cela, cliquer sur le bouton en haut à droite dans la fêntre de l'outil alignement <img src="Gifs2/Options.svg" style="float : right;margin-right: 7px;" width="20" height="20">  
 Choisir "Afficher les options"
 Une rangée d'icones supplémentaire s'affiche :
 
 <img src="Gifs2/Alignement_Box.png">
 
-Selectionner en maintenant le clic gauche de la souris, le grand cercle noir et le rectangle.  
+Selectionner en maintenant le clic gauche de la souris, uniquement le grand cercle noir et le rectangle.  
 Choisir ensuite en bas à droite de la boite d'Alignement "Aligner sur :" et cliquer sur "Aligner sur un objet clef"  
 Mettre en surbrillance le grand cercle noir puis appuyer sur les boutons  
 "Alignement horizontal à gauche" puis "Alignement vertical au centre"
@@ -65,9 +65,11 @@ Mettre en surbrillance le grand cercle noir puis appuyer sur les boutons
 Nous allons maintenant utiliser le Pathfinder afin de soustraire le carré au cercle blanc.  
 Le Pathfinder est similaire à la fonction "Groupper" dans Tinkercad.   
 
-Le Pathfinder se situe par defaut juste à côté de Alignement dans la boite de dialogue.
+Le Pathfinder se situe par defaut juste à côté de Alignement dans la boite de dialogue.  
 (Dans le cas contraire, faire apparaitre le Pathfinder en sélectionnant dans la barre des menus en haut de l'écran,  
-"Fenêtre" puis dans le menu déroulant "Pathfinder")  
+"Fenêtre" puis dans le menu déroulant "Pathfinder")
+
+<img src="Gifs2/Pathfinder_box.png">
 
 Mettre en surbrillance le cercle et le rectangle gâce au ⇧ SHIFT clic puis dans la fenêtre Pathfinder utiliser la fonction "Soustraction"
 
@@ -95,9 +97,9 @@ Dans options d'importation, cliquer sur "Artboard" puis entrer 100mm en Longueur
 
 ![Alt Text](Gifs2/12.gif)
 
-Rajouter un cube de 7,00mm de hauteur, 7,00mm de profondeur par 10,00mm de largeur
+Changer la précision de la grille en 0,5mm
 
-Rajouter un cube de perçage de 3,50mm de hauteur par 6,50mm de largeur
+Rajouter un cube de 7,00mm de hauteur, 7,00mm de profondeur par 10,00mm de largeur et un cube de perçage de 3,50mm de hauteur par 6,50mm de largeur
 
 Modifier la hauteur de la pièce importée en 2,00mm
 
@@ -109,6 +111,7 @@ Aligner les 3 pièces sur la partie plate du cercle grâce à l'outil "Aligner" 
 
 Prendre le cube de perçage, le rallonger de 3,00mm.
 Le surelever de 1,50mm et lui donner une inclinaison de 8º vers l'extérieur.  
+
 Pour pouvoir modifier l'inclinaison dégreés par degrées, il faut après avoir cliquer sur la double fleche, maintenir le clic gauche de la souris enfoncé jusqu'à la roue bleu au-dessus de la pièce.
 
 ![Alt Text](Gifs2/15.gif)
