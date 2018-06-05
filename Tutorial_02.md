@@ -1,4 +1,4 @@
-# **Pour réaliser les protections des hélices avec Illustrator et Tinkercad :**
+# Pour réaliser les protections des hélices avec Illustrator et Tinkercad :
 
 ## Étape 1 : Illustrator
 
@@ -118,6 +118,6 @@ Pour pouvoir modifier l'inclinaison dégreés par degrées, il faut après avoir
 
 Selectionner les trois parties et les regrouppées
 
-Exporter la pièces en selectionnant "Exporter" puis STL pour pouvoir l'imprimer en 3D.
+Exporter la pièce en selectionnant "Exporter" puis STL pour pouvoir l'imprimer en 3D.
 
 ![Alt Text](Gifs2/16.gif)
