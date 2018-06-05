@@ -16,7 +16,8 @@ Puis dans la fenêtre s'affichant cliquer sur Elipse (Ou en appuyant sur la touc
 Faire un simple clic sur la page blanche pour faire apparaitre une boîte de dialogue.  
 Dans celle-ci entrer les dimensions 70mm largeur et 70mm hauteur.  
 (L'icône à droite des dimensions permet de lier les proportions)
-<img src="Gifs2/Ellipse_Box.png" width="50%" height="50%">
+
+<img src="Gifs2/Ellipse_Box.png">
 
 Modidfier l'apparence du cercle grâce aux options en haut à gauche du document.  
 A côté de "Ellipse" cliquer sur la première boite et choisir le carré de couleur noir, dans la boite située immédiatement à droite selectionner le carré barré en rouge cela permet d'obtenir un contour transparent.
@@ -34,7 +35,7 @@ Cliquer maintenant sur l'outil "Selectionner" dans le panneau latéral de gauche
 Afficher le panneau "Aligment des objets" en sélectionnant dans la barre des menus en haut de l'écran,  
 "Fenêtre" puis dans le menu déroulant "Alignement"  
 (Vous pouvez manipuler librement la position du panneau Aligment au-dessus de votre page)
-<img src="Gifs2/Alignement_Simple_Box.png" width="50%" height="50%">
+<img src="Gifs2/Alignement_Simple_Box.png">
 
 Nous allons maintenant mettre les deux cercles en surbrillance puis ensuite dans le panneau "Aligment des objets".  
 Appuyer sur le bouton "Alignement horizontal au centre " et enfin "Alignement vertical au centre".
@@ -53,7 +54,7 @@ Il faut pour cela, cliquer sur le bouton en haut à droite dans la fêntre de l'
 Choisir "Afficher les options"
 Une rangée d'icones supplémentaire s'affiche :
 
-<img src="Gifs2/Alignement_Box.png" width="50%" height="50%">
+<img src="Gifs2/Alignement_Box.png">
 
 Selectionner en maintenant le clic gauche de la souris, uniquement le grand cercle noir et le rectangle.  
 Choisir ensuite en bas à droite de la boite d'Alignement "Aligner sur :" et cliquer sur "Aligner sur un objet clef"  
@@ -69,7 +70,7 @@ Le Pathfinder se situe par defaut juste à côté de Alignement dans la boite de
 (Dans le cas contraire, faire apparaitre le Pathfinder en sélectionnant dans la barre des menus en haut de l'écran,  
 "Fenêtre" puis dans le menu déroulant "Pathfinder")
 
-<img src="Gifs2/Pathfinder_box.png" width="50%" height="50%">
+<img src="Gifs2/Pathfinder_box.png">
 
 Mettre en surbrillance le cercle et le rectangle gâce au ⇧ SHIFT + clic puis dans la fenêtre Pathfinder utiliser la fonction "Soustraction"
 
