@@ -3,7 +3,7 @@
 ## Étape 1 : Illustrator
 
 Sélectionner l'outil "Elipse" dans le panneau latéral de gauche en maintenant le clic de souris sur l'icône "Rectangle" puis dans la fenêtre s'affichant cliquer sur Elipse (Ou en appuyant sur la touche L du clavier)  
-(Si le "Panneau Outils" n'est pas affiché, aller dans le menu du haut et cliquer sur Fênetre > Outils > Par défaut) 
+(Si le "Panneau Outils" n'est pas affiché, aller dans le menu du haut et cliquer sur Fênetre > Outils > Par défaut)
 
 Faire un simple clic au milieu de la page blanche pour faire apparaitre une boîte de dialogue.  
 Dans celle-ci entrer les dimensions 70mm largeur et 70mm hauteur.  
@@ -31,7 +31,7 @@ Le petit cercle est maintenant au milieu du grand cercle
 
 Ajouter ensuite un carré de largeur 7mm et de hauteur 50mm
 
-Aligner le carré avec l'outil "Aligner" au bord à droite du grand cercle, 
+Aligner le carré avec l'outil "Aligner" au bord à droite du grand cercle,
 Pour pouvoir effectuer cette action sans modifier la position des cercles il faut afficher les options supplémentaires d'alignement.
 Il faut pour cela, cliquer sur le bouton en haut à droite dans la fêntre de l'outil alignement <img src="Gifs2/Options.svg" style="float : right;margin-right: 7px;" width="20" height="20">
 
@@ -67,8 +67,10 @@ Modifier la hauteur en 2mm
 Rajouter un cube de 7mm de hauteur, 7mm de profondeur par 10mm de largeur
 
 Réaliser un perçage de 3,5mm de hauteur par 6,5mm de largeur et 8º
-d'inclinaison 
+d'inclinaison
 
-Selectionner les trois parties et les regrouppées 
+Selectionner les trois parties et les regrouppées
 
-Exporter la pièces en selectionnant "Exporter" puis STL
+Exporter la pièces en selectionnant "Exporter" puis STL.
+
+Double cliquer sur le STL
