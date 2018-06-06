@@ -2,7 +2,7 @@
 
 ## Étape 1 : Illustrator
 
-### Ellipses et Alignement
+### 1.1 Ellipses et Alignement
 
 Pour commencer, créer un nouveau plan de travail avec comme dimensions 100mm de largeur par 100mm de hauteur,  
 vérifier que les unités sont en Millimètres, dans "Avancées" choisir "Effet de pixellisation" "Élevés 300 ppp" et décocher l'option "Aligner les nouveaux objets sur la grille en pixels "
@@ -44,7 +44,7 @@ Appuyer sur le bouton "Alignement horizontal au centre " et enfin "Alignement ve
 
 Le petit cercle blanc est maintenant au milieu du grand cercle noir.
 
-### Carré, Alignement avancé et Pathfinder
+### 1.2 Carré, Alignement avancé et Pathfinder
 
 Ajouter ensuite un carré de largeur 7mm et de hauteur 50mm
 
@@ -78,7 +78,7 @@ Mettre en surbrillance le cercle et le rectangle gâce au ⇧ SHIFT + clic puis 
 
 Le cercle blanc comporte maintenant une indentation à gauche
 
-### Sauvegarde
+### 1.3 Sauvegarde
 
 Enregistrer le document en sélectionnant  Fichier puis Enregistrer sous...
 
