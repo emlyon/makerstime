@@ -9,8 +9,8 @@ vérifier que les unités sont en Millimètres, dans "Avancées" choisir "Effet 
 
 ![Alt Text](Gifs2/05.gif)
 
-Sélectionner l'outil "Elipse" dans le panneau latéral de gauche en maintenant le clic de souris sur l'icône "Rectangle".  
-Puis dans la fenêtre s'affichant cliquer sur Elipse (ou en appuyant sur la touche L du clavier)  
+Sélectionner l'outil "Ellipse" dans le panneau latéral de gauche en maintenant le clic de souris sur l'icône "Rectangle".  
+Puis dans la fenêtre s'affichant cliquer sur Ellipse (ou en appuyant sur la touche L du clavier)  
 (Si le "Panneau Outils" n'est pas affiché, aller dans le menu du haut et cliquer sur Fenêtre > Outils > Par défaut)
 
 Faire un simple clic sur la page blanche pour faire apparaitre une boîte de dialogue.  
@@ -19,25 +19,25 @@ Dans celle-ci entrer les dimensions 70mm largeur et 70mm hauteur.
 
 <img src="Gifs2/Ellipse_Box.png">
 
-Modidfier l'apparence du cercle grâce aux options en haut à gauche du document.  
+Modifier l'apparence du cercle grâce aux options en haut à gauche du document.  
 À côté de "Ellipse" cliquer sur la première boite et choisir le carré de couleur noir, dans la boite située immédiatement à droite sélectionner le carré barré en rouge cela permet d'obtenir un contour transparent.
 
 ![Alt Text](Gifs2/06.gif)
 
 En suivant la même méthode, créer un autre cercle de 65 mm par 65 mm.  
-Cette fois-ci changer la couleur du cercle en sélectionner le carré de couleur blanc et dans la boite située immédiatement à droite sélectionner le carré barré en rouge.
+Cette fois-ci changer la couleur du cercle en sélectionnant le carré couleur blanc, puis dans la boite située immédiatement à droite sélectionner le carré barré en rouge.
 
 Cliquer maintenant sur l'outil "Selectionner" dans le panneau latéral de gauche pour pouvoir sélectionner et manipuler la position des cercles librement.  
 (Ou en appuyant sur la touche V du clavier)
 
 ![Alt Text](Gifs2/07.gif)
 
-Afficher le panneau "Aligment des objets" en sélectionnant dans la barre des menus en haut de l'écran,  
+Afficher le panneau "Alignement des objets" en sélectionnant dans la barre des menus en haut de l'écran,  
 "Fenêtre" puis dans le menu déroulant "Alignement"  
-(Vous pouvez manipuler librement la position du panneau Aligment au-dessus de votre page)
+(Vous pouvez manipuler librement la position du panneau Alignement au-dessus de votre page)
 <img src="Gifs2/Alignement_Simple_Box.png">
 
-Nous allons maintenant mettre les deux cercles en surbrillance puis ensuite dans le panneau "Aligment des objets".  
+Nous allons maintenant mettre les deux cercles en surbrillance puis ensuite dans le panneau "Alignement des objets".  
 Appuyer sur le bouton "Alignement horizontal au centre " et enfin "Alignement vertical au centre".
 
 ![Alt Text](Gifs2/08.gif)
@@ -117,7 +117,7 @@ Pour pouvoir modifier l'inclinaison degré par degré, il faut après avoir cliq
 
 ![Alt Text](Gifs2/15.gif)
 
-Sélectionner les trois parties et les regroupées
+Sélectionner les trois parties et les regrouper
 
 Exporter la pièce en sélectionnant "Exporter" puis STL pour pouvoir l'imprimer en 3D.
 
