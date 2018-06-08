@@ -51,7 +51,7 @@ Now add a square of width 7mm and height 50mm
 
 Align the square with the "Align" tools at the edge to the right of the black circle.  
 To perform this action without changing the position of the circles, the additional alignment options must be displayed.  
-To do this, click on the button at the top right of the alignment tool window <img src="Gifs2/Options.svg" style = "float: right; margin-right: 7px;" width = "20" height = "20">
+To do this, click on the button at the top right of the alignment tool window <img src="Gifs2/Options.svg">
 Choose "Show Options"  
 An additional row of icons is displayed:
 
