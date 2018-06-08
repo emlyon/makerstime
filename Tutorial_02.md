@@ -5,7 +5,7 @@
 ### 1.1 Ellipses et Alignement
 
 Pour commencer, créer un nouveau plan de travail avec comme dimensions 100mm de largeur par 100mm de hauteur,  
-vérifier que les unités sont en Millimètres, dans "Avancées" choisir "Effet de pixellisation" "Élevés 300 ppp" et décocher l'option "Aligner les nouveaux objets sur la grille en pixels "
+vérifier que les unités sont en Millimètres, dans "Avancées" choisir "Effet de pixellisation" "Élevés 300 ppp" (et seulement pour une version d'Illustrator infèrieure au égal à 20.1.0 décocher l'option "Aligner les nouveaux objets sur la grille en pixels ").
 
 ![Alt Text](Gifs2/05.gif)
 
@@ -20,12 +20,12 @@ Dans celle-ci entrer les dimensions 70mm largeur et 70mm hauteur.
 <img src="Gifs2/Ellipse_Box.png">
 
 Modifier l'apparence du cercle grâce aux options en haut à gauche du document.  
-À côté de "Ellipse" cliquer sur la première boite et choisir le carré de couleur noir, dans la boite située immédiatement à droite sélectionner le carré barré en rouge cela permet d'obtenir un contour transparent.
+À côté de "Ellipse" cliquer sur la première boite et choisir le carré de couleur noir, dans la boite située immédiatement à droite sélectionner le carré barré en rouge nommé "Sans" ceci permettant d'obtenir un contour transparent.
 
 ![Alt Text](Gifs2/06.gif)
 
 En suivant la même méthode, créer un autre cercle de 65 mm par 65 mm.  
-Cette fois-ci changer la couleur du cercle en sélectionnant le carré couleur blanc, puis dans la boite située immédiatement à droite sélectionner le carré barré en rouge.
+Cette fois-ci changer la couleur du cercle en sélectionnant le carré couleur blanc, puis dans la boite située immédiatement à droite sélectionner le carré "Sans".
 
 Cliquer maintenant sur l'outil "Selectionner" dans le panneau latéral de gauche pour pouvoir sélectionner et manipuler la position des cercles librement.  
 (Ou en appuyant sur la touche V du clavier)
@@ -80,7 +80,7 @@ Le cercle blanc comporte maintenant une indentation à gauche
 
 ### 1.3 Sauvegarde
 
-Enregistrer le document en sélectionnant  Fichier puis Enregistrer sous...
+Enregistrer le document en sélectionnant dans le menu principal "Fichier" puis "Enregistrer sous..."
 
 Dans la boîte de dialogue, vous pouvez librement nommer et choisir où enregistrer votre fichier.  
 Il faudra néanmoins sélectionner le type de fichier SVG dans le menu déroulant à côté de "Format".  
