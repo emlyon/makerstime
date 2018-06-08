@@ -25,10 +25,14 @@ Puis avec "Outil Sélection direct", effacer les traits rouges à l'intérieur d
 
 ![Alt Text](Gifs3/04.gif)
 
-Pour pouvoir découper la forme, il faut que le trait ait une épaisseur de 0,001mm
+Rappel, pour pouvoir découper la forme, il faut que le trait ait une épaisseur de 0,001mm
 
 ![Alt Text](Gifs3/05.gif)
 
-Ajouter deux ronds rouges de 2 mm par 2 mm à une distance de 26 mm l'un de l'autre
+Ajouter deux ronds rouges de 2 mm par 2 mm à une distance de 24 mm l'un de l'autre en utilisant dans le panneau "Aligner", la fonction "Aligner sur un objet clef" puis le bouton "Distribution verticale de l'espace".  
 
-Le fichier peut maintenant être enregistré sur une clef USB / Carte SD et inséré dans l'ordinateur relié à la machine de gravure laser
+Le fichier peut maintenant être enregistré en SVG ou en AI pour pouvoir l'exporter.
+
+[Intro to laser cutting](https://youtu.be/T_0pDgfpme8?list=PL_t1-MryummxwZb7xBvnf4TLlFhXNdn7D)
+
+[Intro to 3d printing](https://youtu.be/FzPWmxMxMAc?list=PL_t1-MryummxwZb7xBvnf4TLlFhXNdn7D)
