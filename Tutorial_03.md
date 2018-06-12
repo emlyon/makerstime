@@ -8,7 +8,7 @@ Nous allons utiliser l'outil "Options de forme de motif"
 
 Pour cela, créer une forme sur la page à côté de la protection et selectionner là
 
-Maintenant cliquer sur la boite "Forme du contour" en haut de votre page elle devrait par défaut comporter un trait noir avec mentionné "De base" à côté
+Maintenant cliquer sur la boite "Forme du contour" en haut de votre page elle devrait par défaut contenir un trait noir avec mentionné "De base" à côté
 
 <img src="Gifs3/Forme_de_contour.png">
 
