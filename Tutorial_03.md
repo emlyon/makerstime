@@ -10,7 +10,7 @@ Pour cela, créer une forme sur la page à côté de la protection et selectionn
 
 Maintenant cliquer sur la boite "Forme de contour" en haut de votre page elle devrait par défaut comporter un trait noir avec mentionné "De base" à côté
 
-<img src="Gifs3/Forme_de_contour">
+<img src="Gifs3/Forme_de_contour.png">
 
 Cliquer sur l'icone "Nouvelle forme" puis dans la boite de dialogue "Forme de motif"
 
