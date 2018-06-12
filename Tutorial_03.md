@@ -73,7 +73,13 @@ N'hésiter pas à combiner différents matériaux entre eux comme du bois et du 
 
 Prendre une image sur the Noun Project 
 
-Dans Illustrator selectionner "Envoyer vers Cutting Master 3"
+Dans l'ordinateur à coté de la découpe laser ouvrer votre fichier avec Illustrator et selectionner dans "Fichier" > "Envoyer vers Cutting Master 3"
+
+Si besoin le logiciel peut être télécharger sur votre ordinateur si vous disposer déjà d'Illustrator CC :
+
+[Cutting Master 3](http://ankersmit.fr/telechargement_decoupe_ce5000.html)
+
+Il suffit ensuite de branche la machine en USB sur l'ordinateur 
 
 # Makers'Toolbox
 
