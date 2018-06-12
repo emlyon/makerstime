@@ -36,7 +36,7 @@ Now click on the "Select" tool in the left side panel to be able to select and m
 Display the "Align" panel by selecting from the menu bar at the top of the screen,  
 Clic on "Window" then on "Alignment" from the drop-down menu.  
 (You can freely manipulate the position of the Alignment panel above your page)
-<img src="Gifs2/Alignment_Simple_Box.png">
+<img src="Gifs2/Alignement_Simple_Box.png">
 
 We will now highlight both circles and then in the "Align" panel.  
 Press the "Horizontal Align Center" button and finally "Vertical Align Center".
@@ -55,7 +55,7 @@ To do this, click on the button at the top right of the alignment tool window <i
 Choose "Show Options"  
 An additional row of icons is displayed:
 
-<img src="Gifs2/Alignment_Box.png">
+<img src="Gifs2/Alignement_Box.png">
 
 Select by holding the left mouse button, only the black circle and the rectangle.  
 Then choose at the bottom right of the Align Panel "Align To:" and click on "Align to Key Object".  
