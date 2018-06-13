@@ -24,8 +24,6 @@
 
 ## Others
 
-[Youtube Video](https://www.youtube.com/watch?v=8G48RRe7nHA)
-
 [Useful Websites](Website.md)
 
 [MultiWii Arduino Software](Code/MultiWii_2_2_SE_2_0)
