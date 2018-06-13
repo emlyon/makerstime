@@ -6,17 +6,23 @@
 
 ## Tutorials
 
+### Tutorial 1 :
+
 [Tutorial 01 FR](Tutorial_01.md)
 
 [Tutorial 01 ENG](Tutorial_01_Eng.md)
 
-[Tutorial 02 WIP](Tutorial_02.md)
+### Tutorial 2 :
+
+[Tutorial 02 FR](Tutorial_02.md)
+
+[Tutorial 02 ENG](Tutorial_02_Eng.md)
+
+### Tutorial 3 :
 
 [Tutorial 03 WIP](Tutorial_03.md)
 
 ## Others
-
-[Youtube Video](https://www.youtube.com/watch?v=8G48RRe7nHA)
 
 [Useful Websites](Website.md)
 
