@@ -117,3 +117,5 @@ Aligner cette nouvelle pièce avec le cylindre précédemment extrudé.
 ![Alt Text](Gifs/23.gif)
 
 La pièce est maintenant terminée et prête à être imprimée !
+
+![Alt Text](STL/Drone_Arm.slt)

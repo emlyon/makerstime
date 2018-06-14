@@ -30,8 +30,10 @@
 
 ## Tinkercad
 
-[Drone Arm on Tinkercad](https://www.tinkercad.com/things/da22oZQdvHE)
+[Drone Model](https://www.tinkercad.com/things/knOlD9Kwb3b)
 
-[Bumper on Tinkercad](https://www.tinkercad.com/things/cDSJKbKL5e3)
+[Drone Arm](https://www.tinkercad.com/things/da22oZQdvHE)
 
-[Custom Plates on Tinkercad](https://www.tinkercad.com/things/8Xq8L8X0xYk)
+[Bumper](https://www.tinkercad.com/things/3CGJuBRc4Rr)
+
+[Custom Plates](https://www.tinkercad.com/things/8Xq8L8X0xYk)

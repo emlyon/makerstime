@@ -122,3 +122,5 @@ Sélectionner les trois parties et les regrouper
 Exporter la pièce en sélectionnant "Exporter" puis STL pour pouvoir l'imprimer en 3D.
 
 ![Alt Text](Gifs2/16.gif)
+
+![Alt Text](STL/Drone_Bumper.stl)
