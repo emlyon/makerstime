@@ -119,3 +119,5 @@ Aligner cette nouvelle pièce avec le cylindre précédemment extrudé.
 La pièce est maintenant terminée et prête à être imprimée !
 
 <script src="https://github.com/emlyon/makerstime/blob/master/STL/Drone_Arm.stl"></script>
+
+<script src="https://embed.github.com/view/3d/skalnik/secret-bear-clip/master/stl/clip.stl"></script>
