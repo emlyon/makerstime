@@ -123,4 +123,4 @@ Exporter la pièce en sélectionnant "Exporter" puis STL pour pouvoir l'imprimer
 
 ![Alt Text](Gifs2/16.gif)
 
-![Alt Text](STL/Drone_Bumper.stl)
+[Drone Bumper en 3D](STL/Drone_Bumper.stl)
