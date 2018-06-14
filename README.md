@@ -2,7 +2,7 @@
 
 ## Researches
 
-[Beyond Mobility](beyond-mobility.html)
+[Beyond Mobility](https://emlyon.github.io/makerstime/beyond-mobility.html)
 
 ## Tutorials
 
