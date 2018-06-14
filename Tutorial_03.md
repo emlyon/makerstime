@@ -2,6 +2,8 @@
 
 ## Changer le design des Protections :
 
+![Alt Text](Pictures/IMG_8234.JPG)
+
 Dans Illustrator, reprendre le dessin de la protection
 
 Nous allons utiliser l'outil "Options de forme de motif"
@@ -45,9 +47,9 @@ Maintenant, importer votre image vectorisée dans Illustrator
 
 ![Alt Text](Gifs3/04.gif)
 
-Comme vu précédemment dans la Makers' ToolboxPour pour découper une forme au laser, nous avons besoin de créer un contour rouge. 
+Comme vu précédemment dans la Makers' ToolboxPour pour découper une forme au laser, nous avons besoin de créer un contour rouge.
 
-Dans un premier temps, nous allons afficher le panneau calques grâce au menu "Fenêtre" puis "Calques", cela nous permettra d'isoler le contour de la forme que nous allons créer. 
+Dans un premier temps, nous allons afficher le panneau calques grâce au menu "Fenêtre" puis "Calques", cela nous permettra d'isoler le contour de la forme que nous allons créer.
 
 Sélectionner ensuite la forme puis aller dans le menu "Objet" > "Tracé" > "Décalage".  
 Choisir 0,1 mm et cliquer sur OK  
@@ -71,7 +73,9 @@ N'hésitez pas à combiner différents matériaux entre eux comme du bois et du 
 
 ## Pour créer un autocollant
 
-Prendre une image sur the Noun Project 
+![Alt Text](Pictures/IMG_8199.JPG)
+
+Prendre une image sur the Noun Project
 
 Dans l'ordinateur à côté de la découpe laser ouvrer votre fichier avec Illustrator et sélectionner dans "Fichier" > "Envoyer vers Cutting Master 3"
 
@@ -79,7 +83,7 @@ Si besoin le logiciel peut être téléchargé sur votre ordinateur si vous disp
 
 [Cutting Master 3](http://ankersmit.fr/telechargement_decoupe_ce5000.html)
 
-Il suffit ensuite de branche la machine en USB sur l'ordinateur 
+Il suffit ensuite de branche la machine en USB sur l'ordinateur
 
 # Makers' Toolbox
 
