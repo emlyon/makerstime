@@ -4,7 +4,7 @@
 
 [Beyond Mobility](https://emlyon.github.io/makerstime/beyond-mobility.html)
 
-[3D Models](https://emlyon.github.io/makerstime/3D Models.html)
+[3D_Models](https://emlyon.github.io/makerstime/3D Models.html)
 
 ## Tutorials
 
