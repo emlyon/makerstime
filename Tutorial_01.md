@@ -1,5 +1,7 @@
 # **Pour réaliser le bras du Drone avec Tinkercad:**
 
+[![Drone_Arm](STL/CaptureDroneArm.png)](https://emlyon.github.io/makerstime/STL/Drone_Arm.html)
+
 Aller sur le site [Tinkercad](https://www.tinkercad.com/)  
 Créer votre compte puis sur le dashboard selectionner "Créer une conception"
 
@@ -117,5 +119,3 @@ Aligner cette nouvelle pièce avec le cylindre précédemment extrudé.
 ![](Gifs/23.gif)
 
 La pièce est maintenant terminée et prête à être imprimée !
-
-[![Drone_Arm](STL/CaptureDroneArm.png)](STL/Drone_Arm.html)

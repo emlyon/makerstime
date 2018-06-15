@@ -1,6 +1,6 @@
 # Pour réaliser les protections des hélices avec Illustrator et Tinkercad :
 
-[![Drone_Bumper](STL/CaptureDroneArm.png)](STL/Drone_Bumper.html)
+[![Drone_Bumper](STL/CaptureDroneBumper.png)](https://emlyon.github.io/makerstime/STL/Drone_Bumper.html)
 
 ## Étape 1 : Illustrator
 
