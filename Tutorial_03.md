@@ -4,7 +4,7 @@
 ## Changer le design des Protections :  
 &NewLine;
 
-![Alt Text](Pictures/IMG_8234.JPG)
+![](Pictures/IMG_8234.JPG)
 
 Dans Illustrator, reprendre le dessin de la protection
 
@@ -28,28 +28,29 @@ Vous pouvez de nouveau modifier les réglages du contour dans "Options de l'obje
 
 Exportez votre dessin en SVG et importez-le dans Tinkercad comme vu dans le Tutoriel 2
 
-![Alt Text](Gifs3/01.gif)
+![](Gifs3/01.gif)
 
 
 ## Ajouter des décorations avec la découpe laser :
 
-![Alt Text](Pictures/IMG_8126.JPG)
+![](Pictures/IMG_8126.JPG)
+Shark : Created by Callum Taylor
 
 Aller sur le site the [Noun Project](https://thenounproject.com)
 
 Grâce à ce site, vous pouvez très facilement et gratuitement téléchargez des images dans un format vectorisé
 
-![Alt Text](Gifs3/02.gif)
+![](Gifs3/02.gif)
 
 Sélectionner une image sur le site puis cliquer sur "Download" et "SVG" puis "Creative Commons"
 
 (Si demandé, créer un compte gratuit sur le site)
 
-![Alt Text](Gifs3/03.gif)
+![](Gifs3/03.gif)
 
 Maintenant, importer votre image vectorisée dans Illustrator
 
-![Alt Text](Gifs3/04.gif)
+![](Gifs3/04.gif)
 
 Comme vu précédemment dans la Makers' ToolboxPour pour découper une forme au laser, nous avons besoin de créer un contour rouge.
 
@@ -60,9 +61,12 @@ Choisir 0,1 mm et cliquer sur OK
 Sélectionner le calque avec le contour précédemment créer, sélectionner sans remplissage puis contour rouge avec une épaisseur de 0,001mm.
 Masquer les autres calques avec le bouton en forme d'oeil puis avec "Outil Sélection direct", effacer les traits rouges à l'intérieur de l'image
 
-![Alt Text](Gifs3/05.gif)
+![](Gifs3/05.gif)
 
 ## Pour créer un chapeau
+
+![](Pictures/IMG_8232.JPG)
+Egg : Created by Eleanor Bell  
 
 La taille maximale recommandée pour un chapeau est de 40mm de largeur par 40mm de profondeur pour ne pas obstruer les passages d'hélices et un poids maximal de 5 grammes. Un drone lourd est plus facile à piloter au détriment de la durée de vol.
 
@@ -73,11 +77,12 @@ Le fichier peut maintenant être enregistré en SVG ou en AI pour pouvoir l'expo
 
 N'hésitez pas à combiner différents matériaux entre eux comme du bois et du papier Canson
 
-![Alt Text](Gifs3/06.gif)
+![](Gifs3/06.gif)
 
 ## Pour créer un autocollant
 
-![Alt Text](Pictures/IMG_8199.JPG)
+![](Pictures/IMG_8199.JPG)
+Alien : Created by Symbolon  
 
 Prendre une image sur the Noun Project
 

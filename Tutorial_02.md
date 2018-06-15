@@ -7,7 +7,7 @@
 Pour commencer, créer un nouveau plan de travail avec comme dimensions 100mm de largeur par 100mm de hauteur,  
 vérifier que les unités sont en Millimètres, dans "Avancées" choisir "Effet de pixellisation" "Élevés 300 ppp" (et seulement pour une version d'Illustrator infèrieure au égal à 20.1.0 décocher l'option "Aligner les nouveaux objets sur la grille en pixels ").
 
-![Alt Text](Gifs2/05.gif)
+![](Gifs2/05.gif)
 
 Sélectionner l'outil "Ellipse" dans le panneau latéral de gauche en maintenant le clic de souris sur l'icône "Rectangle".  
 Puis dans la fenêtre s'affichant cliquer sur Ellipse (ou en appuyant sur la touche L du clavier)  
@@ -22,7 +22,7 @@ Dans celle-ci entrer les dimensions 70mm largeur et 70mm hauteur.
 Modifier l'apparence du cercle grâce aux options en haut à gauche du document.  
 À côté de "Ellipse" cliquer sur la première boite et choisir le carré de couleur noir, dans la boite située immédiatement à droite sélectionner le carré barré en rouge nommé "Sans" ceci permettant d'obtenir un contour transparent.
 
-![Alt Text](Gifs2/06.gif)
+![](Gifs2/06.gif)
 
 En suivant la même méthode, créer un autre cercle de 65 mm par 65 mm.  
 Cette fois-ci changer la couleur du cercle en sélectionnant le carré couleur blanc, puis dans la boite située immédiatement à droite sélectionner le carré "Sans".
@@ -30,7 +30,7 @@ Cette fois-ci changer la couleur du cercle en sélectionnant le carré couleur b
 Cliquer maintenant sur l'outil "Selectionner" dans le panneau latéral de gauche pour pouvoir sélectionner et manipuler la position des cercles librement.  
 (Ou en appuyant sur la touche V du clavier)
 
-![Alt Text](Gifs2/07.gif)
+![](Gifs2/07.gif)
 
 Afficher le panneau "Alignement des objets" en sélectionnant dans la barre des menus en haut de l'écran,  
 "Fenêtre" puis dans le menu déroulant "Alignement"  
@@ -40,7 +40,7 @@ Afficher le panneau "Alignement des objets" en sélectionnant dans la barre des 
 Nous allons maintenant mettre les deux cercles en surbrillance puis ensuite dans le panneau "Alignement des objets".  
 Appuyer sur le bouton "Alignement horizontal au centre " et enfin "Alignement vertical au centre".
 
-![Alt Text](Gifs2/08.gif)
+![](Gifs2/08.gif)
 
 Le petit cercle blanc est maintenant au milieu du grand cercle noir.
 
@@ -61,7 +61,7 @@ Choisir ensuite en bas à droite de la boite d'Alignement "Aligner sur :" et cli
 Mettre en surbrillance le grand cercle noir puis appuyer sur les boutons  
 "Alignement horizontal à gauche" puis "Alignement vertical au centre"
 
-![Alt Text](Gifs2/09.gif)
+![](Gifs2/09.gif)
 
 Nous allons maintenant utiliser le Pathfinder afin de soustraire le carré au cercle blanc.  
 Le Pathfinder est similaire à la fonction "Regrouper" dans Tinkercad.   
@@ -74,7 +74,7 @@ Le Pathfinder se situe par défaut juste à côté de "Alignement" dans la boite
 
 Mettre en surbrillance le cercle et le rectangle gâce au ⇧ SHIFT + clic puis dans la fenêtre Pathfinder utiliser la fonction "Soustraction"
 
-![Alt Text](Gifs2/10.gif)
+![](Gifs2/10.gif)
 
 Le cercle blanc comporte maintenant une indentation à gauche
 
@@ -88,7 +88,7 @@ Puis appuyer sur OK
 
 Une autre boîte de dialogue apparait, laisser le Profil SVG en SVG 1.1 et il n'est pas nécessaire de modifier les autres options. Cliquer sur OK
 
-![Alt Text](Gifs2/11.gif)
+![](Gifs2/11.gif)
 
 ## Étape 2 : Tinkercad
 
@@ -96,7 +96,7 @@ Importer votre fichier dans Tinkercad grâce au bouton en haut à droite
 
 Dans options d'importation, cliquer sur "Artboard" puis entrer 100mm en Longueur et 100mm en Largeur
 
-![Alt Text](Gifs2/12.gif)
+![](Gifs2/12.gif)
 
 Changer la précision de la grille en 0,5mm
 
@@ -104,23 +104,23 @@ Rajouter un cube de 7,00mm de hauteur, 7,00mm de profondeur par 10,00mm de large
 
 Modifier la hauteur de la pièce importée en 2,00mm
 
-![Alt Text](Gifs2/13.gif)
+![](Gifs2/13.gif)
 
 Aligner les 3 pièces sur la partie plate du cercle grâce à l'outil "Aligner" comme vu dans le tutoriel précédent.
 
-![Alt Text](Gifs2/14.gif)
+![](Gifs2/14.gif)
 
 Prendre le cube de perçage, le rallonger de 3,00mm.
 Le surélever de 1,50mm et lui donner une inclinaison de 8º vers l'extérieur.  
 
 Pour pouvoir modifier l'inclinaison degré par degré, il faut après avoir cliquer sur la double flèche, maintenir le clic gauche de la souris enfoncé jusqu'à la roue bleue au-dessus de la pièce.
 
-![Alt Text](Gifs2/15.gif)
+![](Gifs2/15.gif)
 
 Sélectionner les trois parties et les regrouper
 
 Exporter la pièce en sélectionnant "Exporter" puis STL pour pouvoir l'imprimer en 3D.
 
-![Alt Text](Gifs2/16.gif)
+![](Gifs2/16.gif)
 
 [Drone Bumper en 3D](STL/Drone_Bumper.stl)
