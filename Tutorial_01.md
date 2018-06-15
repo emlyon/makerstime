@@ -118,4 +118,4 @@ Aligner cette nouvelle pièce avec le cylindre précédemment extrudé.
 
 La pièce est maintenant terminée et prête à être imprimée !
 
-[Drone Arm in 3D](STL/Drone_Arm.stl)
+[![Drone_Arm](STL/CaptureDroneArm.png)](STL/Drone_Arm.html)

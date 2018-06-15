@@ -1,5 +1,7 @@
 # Pour réaliser les protections des hélices avec Illustrator et Tinkercad :
 
+[![Drone_Bumper](STL/CaptureDroneArm.png)](STL/Drone_Bumper.html)
+
 ## Étape 1 : Illustrator
 
 ### 1.1 Ellipses et Alignement
@@ -122,5 +124,3 @@ Sélectionner les trois parties et les regrouper
 Exporter la pièce en sélectionnant "Exporter" puis STL pour pouvoir l'imprimer en 3D.
 
 ![](Gifs2/16.gif)
-
-[Drone Bumper en 3D](STL/Drone_Bumper.stl)
