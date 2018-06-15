@@ -1,7 +1,7 @@
 # Drone
 
 ![](Pictures/IMG_8219.JPG)
-![Alt Text](Pictures/IMG_8250.JPG)
+![](Pictures/IMG_8250.JPG)
 
 # Bumpers
 
