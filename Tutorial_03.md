@@ -1,6 +1,8 @@
-# Pour Personnaliser son Drone:
+# Personnalisation du Drone:
+&NewLine;
 
-## Changer le design des Protections :
+## Changer le design des Protections :  
+&NewLine;
 
 ![Alt Text](Pictures/IMG_8234.JPG)
 
@@ -30,6 +32,8 @@ Exportez votre dessin en SVG et importez-le dans Tinkercad comme vu dans le Tuto
 
 
 ## Ajouter des décorations avec la découpe laser :
+
+![Alt Text](Pictures/IMG_8126.JPG)
 
 Aller sur le site the [Noun Project](https://thenounproject.com)
 
