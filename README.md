@@ -10,7 +10,7 @@
 
 ### Tutorial 1 :
 
-[Tutorial 01 FR](Tutorial_01.md)
+[Tutorial 01 FR](https://emlyon.github.io/makerstime/Tutorial_01.html)
 
 [Tutorial 01 ENG](Tutorial_01_Eng.md)
 
