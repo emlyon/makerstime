@@ -16,7 +16,7 @@
 
 ### Tutorial 2 :
 
-[Tutorial 02 FR](Tutorial_02.md)
+[Tutorial 02 FR](https://emlyon.github.io/makerstime/Tutorial_02.html)
 
 [Tutorial 02 ENG](Tutorial_02_Eng.md)
 
