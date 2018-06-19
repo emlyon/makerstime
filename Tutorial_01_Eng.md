@@ -1,9 +1,9 @@
-# **How to Make the Drone Arm :**
+# How to Make the Drone Arm :
 
 Go on the website [Tinkercad](https://www.tinkercad.com/)  
 Create an account then select "Create new design" on the Dashboard
 
-## **Step 1: Create a cylinder**
+## Step 1: Create a cylinder
 
 Drag and drop the orange cylinder from the right side panel onto the workplane.
 
@@ -29,7 +29,7 @@ Using the black arrow at the top, move the cylinder 2.00 mm up.
 ![](Gifs/05-2.gif)
 
 
-## **Step 2: Extrude the orange cylinder**
+## Step 2: Extrude the orange cylinder
 
 Holding the left mouse button, select both cylinders. They should both appear with a cyan line.  
 Press the "Align" button (or the L key).  
@@ -45,7 +45,7 @@ Then select the "Group" icon at the top right (or the Ctrl + G key)
 The orange cylinder is now hollow.
 
 
-## **Step 3: Add some vents**
+## Step 3: Add some vents
 
 Therefore, take the hollow cylinder of the side panel.
 Thanks to the double curved arrows, rotate it to 90°.
@@ -72,7 +72,7 @@ Select the three cylinders and click on "Group" again.
 The orange cylinder is now pierced by four ovals.
 
 
-## **Step 4: Make the drone arm**
+## Step 4: Make the drone arm
 
 Select the red box in the right side panel.
 
