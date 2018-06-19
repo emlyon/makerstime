@@ -142,10 +142,12 @@ controlP5.Controller hideLabel(controlP5.Controller c) {
   return c;
 }
 
-void setup() {
+void settings() {
   size(windowsX,windowsY,OPENGL);
   frameRate(20); 
+}
 
+void setup() {
   font8 = createFont("Arial bold",8,false);
   font9 = createFont("Arial bold",9,false);
   font12 = createFont("Arial bold",12,false);
