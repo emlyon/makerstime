@@ -22,7 +22,7 @@
 
 ### Tutorial 3 :
 
-[Tutorial 03 WIP](Tutorial_03.md)
+[Tutorial 03 WIP](https://emlyon.github.io/makerstime/Tutorial_03.html)
 
 [Pictures Examples](Pictures.md)
 
