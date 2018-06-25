@@ -17,3 +17,7 @@
 [Doubles Lignes Illustrator](https://architips.fr/illustrator-creer-une-double-ligne-simplement/)
 
 [Alignement ou répartition](https://helpx.adobe.com/ca_fr/illustrator/using/moving-aligning-distributing-objects.html)
+
+[Instagram Like Auto Play Pause videos](https://ciphertrick.com/2016/10/21/instagram-like-auto-play-pause-videos-when-visible-using-javascript/)
+
+[Link and execute external JavaScript file hosted on GitHub](https://stackoverflow.com/questions/17341122/link-and-execute-external-javascript-file-hosted-on-github)
