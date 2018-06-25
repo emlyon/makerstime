@@ -22,9 +22,11 @@
 
 ### Tutorial 3 :
 
-[Tutorial 03 WIP](https://emlyon.github.io/makerstime/Tutorial_03.html)
+[Customization Examples](Pictures.md)
 
-[Pictures Examples](Pictures.md)
+[Tutorial 03 FR](https://emlyon.github.io/makerstime/Tutorial_03.html)
+
+[Tutorial 03 ENG](https://emlyon.github.io/makerstime/Tutorial_03_Eng.html)
 
 ## Others
 
