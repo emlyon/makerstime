@@ -796,6 +796,9 @@ void setup() {
   #endif
 
   debugmsg_append_str("initialization completed\n");
+  delay(5000);
+  GYRO_Common();
+  ACC_Common();
 }
 
 void go_arm() {

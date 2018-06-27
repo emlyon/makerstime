@@ -6,6 +6,8 @@
 
 [SunFounder Database](https://www.sunfounder.com/learn/)
 
+[SunFounder 6DX](https://www.sunfounder.com/learn/category/6DX_Starter_Kit_for_Arduino.html)
+
 [Noun Project SVG](https://thenounproject.com/)
 
 [Gif Brewery](http://gifbrewery.com)
