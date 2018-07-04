@@ -113,27 +113,6 @@ void loop() {
         return;
     }
 
-    int joystickLeftY = constrain(analogRead(A0) + joystickLeftYOffset * joystickOffsetStep, 0, 1023); // Lecture de la position des Joysticks avec ajout du décalage
-    int joystickLeftX = constrain(analogRead(A1) + joystickLeftXOffset * joystickOffsetStep, 0, 1023);
-    int joystickRightY = constrain(analogRead(A2) + joystickRightYOffset * joystickOffsetStep, 0, 1023);
-    int joystickRightX = constrain(analogRead(A3) + joystickRightXOffset * joystickOffsetStep, 0, 1023);
-
-
-    int valueRoll, valuePitch, valueThrottle, valueYaw; //Roll : Roulis (inclnaison droite-gauche); Pitch : Aileron (inclinaison avant-arrière), Yaw : Dirrection droite-gauche, Throttle : Gaz
-
-    if (throttleHand == 0) { // Si es gaz sont à gauche
-        valueRoll = map(joystickRightY, 0, 1023, 2011, 988); // Translation du range 0-1024 en 2011-988
-        valuePitch = map(joystickRightX, 0, 1023, 2011, 988);
-        valueThrottle = map(joystickLeftX, 0, 1023, 2011, 988);
-        valueYaw = map(joystickLeftY, 0, 1023, 2011, 988);
-    }
-    else { // Si les gaz sont à droite
-        valueRoll = map(joystickLeftY, 0, 1023, 988, 2011); // Translation du range 0-1024 en 988-2011
-        valuePitch = map(joystickRightX, 0, 1023, 988, 2011);
-        valueThrottle = map(joystickLeftX, 0, 1023, 988, 2011);
-        valueYaw = map(joystickRightY, 0, 1023, 988, 2011);
-    }
-
     if( auxsState[ 2 ] == HIGH ){
         // sendData( avec des valeurs fixées, 1200 );
     }
@@ -141,6 +120,26 @@ void loop() {
         // sendData( avec des valeurs fixées, 1200 );
     }
     else{
+        int joystickLeftY = constrain(analogRead(A0) + joystickLeftYOffset * joystickOffsetStep, 0, 1023); // Lecture de la position des Joysticks avec ajout du décalage
+        int joystickLeftX = constrain(analogRead(A1) + joystickLeftXOffset * joystickOffsetStep, 0, 1023);
+        int joystickRightY = constrain(analogRead(A2) + joystickRightYOffset * joystickOffsetStep, 0, 1023);
+        int joystickRightX = constrain(analogRead(A3) + joystickRightXOffset * joystickOffsetStep, 0, 1023);
+
+
+        int valueRoll, valuePitch, valueThrottle, valueYaw; //Roll : Roulis (inclnaison droite-gauche); Pitch : Aileron (inclinaison avant-arrière), Yaw : Dirrection droite-gauche, Throttle : Gaz
+
+        if (throttleHand == 0) { // Si es gaz sont à gauche
+            valueRoll = map(joystickRightY, 0, 1023, 2011, 988); // Translation du range 0-1024 en 2011-988
+            valuePitch = map(joystickRightX, 0, 1023, 2011, 988);
+            valueThrottle = map(joystickLeftX, 0, 1023, 2011, 988);
+            valueYaw = map(joystickLeftY, 0, 1023, 2011, 988);
+        }
+        else { // Si les gaz sont à droite
+            valueRoll = map(joystickLeftY, 0, 1023, 988, 2011); // Translation du range 0-1024 en 988-2011
+            valuePitch = map(joystickRightX, 0, 1023, 988, 2011);
+            valueThrottle = map(joystickLeftX, 0, 1023, 988, 2011);
+            valueYaw = map(joystickRightY, 0, 1023, 988, 2011);
+        }
         sendData( valueRoll, valuePitch, valueThrottle, valueYaw, auxsState[ 0 ], auxsState[ 1 ] );
     }
 }
