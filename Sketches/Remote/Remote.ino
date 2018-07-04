@@ -150,6 +150,7 @@ void loop() {
         bitWrite(rf24OutData[8], i, auxsState[i]); //rappel: rf24OutData est un tableau de "byte" = 8-"bit"
     } // rf24OutData[8] = value Aux 1,2,3,4
 
+    // send data to rf module
     if (rf24.write(rf24OutData, rf24OutDataSize)) {
         digitalWrite(signalLedPin, HIGH); // Si la fonction marche, allume la led
     }
