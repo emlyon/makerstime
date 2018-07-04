@@ -175,7 +175,7 @@ void sendData(int valueRoll, int valuePitch, int valueThrottle, int valueYaw, in
         else {
             digitalWrite(signalLedPin, LOW);
         }
-    } while( millis() < timestamp + duration )
+    } while( millis() < timestamp + duration );
 }
 
 // updateService is called 3000 times by second via FlexiTimer library
