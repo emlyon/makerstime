@@ -154,7 +154,7 @@ void sendData(int valueRoll, int valuePitch, int valueThrottle, int valueYaw, in
     bitWrite(rf24OutData[8], i, aux1);
     bitWrite(rf24OutData[8], i, aux2);
     bitWrite(rf24OutData[8], i, aux3);
-    bitWrite(rf24OutData[8], i, aux4);
+    bitWrite(rf24OutData[8], i, btnD);
     // rf24OutData[8] = value Aux 1,2,3 et bouton D
 
     // send data to rf module
