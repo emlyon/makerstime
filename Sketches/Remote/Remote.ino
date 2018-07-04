@@ -159,6 +159,7 @@ void loop() {
     }
 }
 
+// updateService is called 3000 times by second via FlexiTimer library
 void updateService() {
     handleKey();
     handleSwitch();
