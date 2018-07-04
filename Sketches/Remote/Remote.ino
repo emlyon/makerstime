@@ -151,7 +151,7 @@ void loop() {
     } // rf24OutData[8] = value Aux 1,2,3,4
 
     if (rf24.write(rf24OutData, rf24OutDataSize)) {
-        digitalWrite(signalLedPin, HIGH); // Si la fonction ne marche pas, allume la led
+        digitalWrite(signalLedPin, HIGH); // Si la fonction marche, allume la led
     }
     else {
         digitalWrite(signalLedPin, LOW);
