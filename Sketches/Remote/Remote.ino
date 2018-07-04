@@ -134,7 +134,15 @@ void loop() {
         valueYaw = map(joystickRightY, 0, 1023, 988, 2011);
     }
 
-    sendData( valueRoll, valuePitch, valueThrottle, valueYaw, auxsState[ 0 ], auxsState[ 1 ] );
+    if( auxsState[ 2 ] == HIGH ){
+        // sendData( avec des valeurs fixées)
+    }
+    else if( auxState[ 3 ] == HIGH ){
+        // sendData( avec des valeurs fixées)
+    }
+    else{
+        sendData( valueRoll, valuePitch, valueThrottle, valueYaw, auxsState[ 0 ], auxsState[ 1 ] );
+    }
 }
 
 void sendData(int valueRoll, int valuePitch, int valueThrottle, int valueYaw, int aux1, int aux2 ){
