@@ -135,7 +135,13 @@ void loop() {
     }
 
     if( auxsState[ 2 ] == HIGH ){
-        // sendData( avec des valeurs fixées)
+        long timestamp = millis();
+        int duration = 1200;
+        for( int t = timestamp; t < timestamp + duration; t = millis() ){
+            // sendData( avec des valeurs fixées)
+            delay( 1 );
+        }
+
     }
     else if( auxState[ 3 ] == HIGH ){
         // sendData( avec des valeurs fixées)
