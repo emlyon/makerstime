@@ -1,9 +1,9 @@
 void handleSwitch() {
-    int swithsState[switchsSize];
+    int switchsState[switchsSize];
 
     for (int i = 0; i < switchsSize; i++) {
-        swithsState[i] = digitalRead(switchsPins[i]);
-        if (swithsState[i] != lastSwitchsState[i]) {
+        switchsState[i] = digitalRead(switchsPins[i]);
+        if (switchsState[i] != lastSwitchsState[i]) {
             Serial.print("Switch changed: ");
             switch (i) {
                 case 0: // switch A
@@ -16,8 +16,8 @@ void handleSwitch() {
                 Serial.print("C: ");
                 break;
             }
-            auxsState[i] = lastSwitchsState[i] = swithsState[i];
-            Serial.println(swithsState[i]);
+            auxsState[i] = lastSwitchsState[i] = switchsState[i];
+            Serial.println(switchsState[i]);
             tone(tonePin, toneFrequency, toneDuration);
         }
     }

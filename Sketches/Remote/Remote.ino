@@ -37,7 +37,7 @@ const int keysColumnPins[] = {4, 5, 6};
 const int keysRowSize = sizeof(keysRowPins) / sizeof(int); // nombre d'éléments du tableau keysRowPins
 const int keysColumnSize = sizeof(keysColumnPins) / sizeof(int); // nombre d'éléments du tableau keysColumnPins
 
-const int switchsPins[] = {3, 2, A5}; // Pin des boutons
+const int switchsPins[] = {3, 2, A5}; // Pin des switchs
 const int switchsSize = sizeof(switchsPins) / sizeof(int);
 int lastSwitchsState[switchsSize];
 
@@ -145,10 +145,11 @@ void loop() {
     rf24OutData[5] = valueThrottle % 256;
     rf24OutData[6] = valueYaw / 256;
     rf24OutData[7] = valueYaw % 256;
+    // rf24OutData[0 à 7] = valeurs de 988 à 2011 en alternant valeur entière de la division par 256 et reste de la division par 256
 
     for (int i = 0; i < auxsSize; i++) {
         bitWrite(rf24OutData[8], i, auxsState[i]); //rappel: rf24OutData est un tableau de "byte" = 8-"bit"
-    } // rf24OutData[8] = value Aux 1,2,3,4
+    } // rf24OutData[8] = value Aux 1,2,3 et bouton D
 
     // send data to rf module
     if (rf24.write(rf24OutData, rf24OutDataSize)) {
