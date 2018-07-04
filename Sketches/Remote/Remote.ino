@@ -134,7 +134,10 @@ void loop() {
         valueYaw = map(joystickRightY, 0, 1023, 988, 2011);
     }
 
+    sendData( valueRoll, valuePitch, valueThrottle, valueYaw, auxsState[ 0 ], auxsState[ 1 ], auxsState[ 2 ], auxsState[ 3 ] );
+}
 
+void setData(int valueRoll, int valuePitch, int valueThrottle, int valueYaw, int aux1, int aux2, int aux3, int btnD ){
     // rf24OutData est un array de bytes (octets, qui peut donc stocker une valeur de 0 à 255 )
     // donc pour stocker des valeurs de 988 à 2011
     rf24OutData[0] = valueRoll / 256; // on divise la valeur par 256 et on stocke la valeur entière
@@ -147,9 +150,12 @@ void loop() {
     rf24OutData[7] = valueYaw % 256;
     // rf24OutData[0 à 7] = valeurs de 988 à 2011 en alternant valeur entière de la division par 256 et reste de la division par 256
 
-    for (int i = 0; i < auxsSize; i++) {
-        bitWrite(rf24OutData[8], i, auxsState[i]); //rappel: rf24OutData est un tableau de "byte" = 8-"bit"
-    } // rf24OutData[8] = value Aux 1,2,3 et bouton D
+    //rappel: rf24OutData est un tableau de "byte" = 8-"bit"
+    bitWrite(rf24OutData[8], i, aux1);
+    bitWrite(rf24OutData[8], i, aux2);
+    bitWrite(rf24OutData[8], i, aux3);
+    bitWrite(rf24OutData[8], i, aux4);
+    // rf24OutData[8] = value Aux 1,2,3 et bouton D
 
     // send data to rf module
     if (rf24.write(rf24OutData, rf24OutDataSize)) {
