@@ -141,7 +141,6 @@ void loop() {
             // sendData( avec des valeurs fixées)
             delay( 1 );
         }
-
     }
     else if( auxState[ 3 ] == HIGH ){
         // sendData( avec des valeurs fixées)
