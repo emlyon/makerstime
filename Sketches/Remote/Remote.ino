@@ -135,22 +135,17 @@ void loop() {
     }
 
     if( auxsState[ 2 ] == HIGH ){
-        long timestamp = millis();
-        int duration = 1200;
-        for( int t = timestamp; t < timestamp + duration; t = millis() ){
-            // sendData( avec des valeurs fixées)
-            delay( 1 );
-        }
+        // sendData( avec des valeurs fixées, 1200 );
     }
     else if( auxState[ 3 ] == HIGH ){
-        // sendData( avec des valeurs fixées)
+        // sendData( avec des valeurs fixées, 1200 );
     }
     else{
         sendData( valueRoll, valuePitch, valueThrottle, valueYaw, auxsState[ 0 ], auxsState[ 1 ] );
     }
 }
 
-void sendData(int valueRoll, int valuePitch, int valueThrottle, int valueYaw, int aux1, int aux2 ){
+void sendData(int valueRoll, int valuePitch, int valueThrottle, int valueYaw, int aux1, int aux2, int duration = 0 ){
     // rf24OutData est un array de bytes (octets, qui peut donc stocker une valeur de 0 à 255 )
     // donc pour stocker des valeurs de 988 à 2011
     rf24OutData[0] = valueRoll / 256; // on divise la valeur par 256 et on stocke la valeur entière
@@ -171,12 +166,16 @@ void sendData(int valueRoll, int valuePitch, int valueThrottle, int valueYaw, in
     // rf24OutData[8] = value Aux 1,2
 
     // send data to rf module
-    if (rf24.write(rf24OutData, rf24OutDataSize)) {
-        digitalWrite(signalLedPin, HIGH); // Si la fonction marche, allume la led
-    }
-    else {
-        digitalWrite(signalLedPin, LOW);
-    }
+
+    long timestamp = millis();
+    do{
+        if (rf24.write(rf24OutData, rf24OutDataSize)) {
+            digitalWrite(signalLedPin, HIGH); // Si la fonction marche, allume la led
+        }
+        else {
+            digitalWrite(signalLedPin, LOW);
+        }
+    } while( millis() < timestamp + duration )
 }
 
 // updateService is called 3000 times by second via FlexiTimer library
