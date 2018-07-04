@@ -137,7 +137,7 @@ void loop() {
     sendData( valueRoll, valuePitch, valueThrottle, valueYaw, auxsState[ 0 ], auxsState[ 1 ], auxsState[ 2 ], auxsState[ 3 ] );
 }
 
-void setData(int valueRoll, int valuePitch, int valueThrottle, int valueYaw, int aux1, int aux2, int aux3, int btnD ){
+void sendData(int valueRoll, int valuePitch, int valueThrottle, int valueYaw, int aux1, int aux2, int aux3, int btnD ){
     // rf24OutData est un array de bytes (octets, qui peut donc stocker une valeur de 0 à 255 )
     // donc pour stocker des valeurs de 988 à 2011
     rf24OutData[0] = valueRoll / 256; // on divise la valeur par 256 et on stocke la valeur entière
