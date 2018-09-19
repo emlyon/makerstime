@@ -15,10 +15,12 @@
 #include <FlexiTimer2.h>
 #include <EEPROM.h>
 
+// Modifier ici par l'addresse de votre drone
+const byte rf24Address[6] = { 'N', 'o', '0', '0', '1' };
+
 const int throttleHand = 0; // Position commande des gaz, si 0 commande à gauche
 
 RF24 rf24 = RF24(9, 10); // Module de communication
-const byte rf24Address[6] = { 'N', 'o', '0', '0', '1' };
 const int rf24OutDataSize = 9;
 byte rf24OutData[rf24OutDataSize];
 const int rf24WriteInterval = 20; // Interval de communication 20ms
