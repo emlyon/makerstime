@@ -16,7 +16,7 @@
 #include <EEPROM.h>
 
 // Modifier ici par l'addresse de votre drone
-const byte rf24Address[6] = { 'N', 'o', '0', '0', '1' };
+const byte rf24Address[6] = { 'M', 'a', 'k', 'e', 'r' };
 
 const int throttleHand = 0; // Position commande des gaz, si 0 commande à gauche
 
