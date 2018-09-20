@@ -15,7 +15,7 @@
 #include "ppmOut.h"
 
 // Modifier ici par l'addresse de votre drone
-const byte rf24Address[6] = { 'N', 'o', '0', '0', '1' };
+const byte rf24Address[6] = { 'M', 'a', 'k', 'e', 'r' };
 
 RF24 rf24 = RF24(9, 10);
 const int rf24InDataSize = 9;
@@ -113,4 +113,3 @@ void loop() {
     }
   }
 }
-

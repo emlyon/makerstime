@@ -1,11 +1,14 @@
 void handleSwitch() {
     int switchsState[switchsSize];
 
-    for (int i = 0; i < switchsSize; i++) {
+    for (int i = 0; i < switchsSize; i++)
+    {
         switchsState[i] = digitalRead(switchsPins[i]);
-        if (switchsState[i] != lastSwitchsState[i]) {
+        if (switchsState[i] != lastSwitchsState[i])
+        {
             Serial.print("Switch changed: ");
-            switch (i) {
+            switch (i)
+            {
                 case 0: // switch A
                 Serial.print("A: ");
                 break;
