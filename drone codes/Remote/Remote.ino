@@ -15,10 +15,12 @@
 #include <FlexiTimer2.h>
 #include <EEPROM.h>
 
+// Modifier ici par l'addresse de votre drone
+const byte rf24Address[6] = { 'M', 'a', 'k', 'e', 'r' };
+
 const int throttleHand = 0; // Position commande des gaz, si 0 commande à gauche
 
 RF24 rf24 = RF24(9, 10); // Module de communication
-const byte rf24Address[6] = { 'N', 'o', '0', '0', '1' };
 const int rf24OutDataSize = 9;
 byte rf24OutData[rf24OutDataSize];
 const int rf24WriteInterval = 20; // Interval de communication 20ms
@@ -50,6 +52,45 @@ int joystickRightYOffset;
 int joystickRightXOffset;
 
 const int joystickOffsetStep = 10;
+
+int count = 0; 
+
+///////// SENDDATA FUNCTION /////////////////
+void sendData(int valueRoll, int valuePitch, int valueThrottle, int valueYaw, int aux1, int aux2, int duration = 0 ){
+    // rf24OutData est un array de bytes (octets, qui peut donc stocker une valeur de 0 à 255 )
+    // donc pour stocker des valeurs de 988 à 2011
+    rf24OutData[0] = valueRoll / 256; // on divise la valeur par 256 et on stocke la valeur entière
+    rf24OutData[1] = valueRoll % 256; // puis on stocke le reste de la division par 256
+    rf24OutData[2] = valuePitch / 256;
+    rf24OutData[3] = valuePitch % 256;
+    rf24OutData[4] = valueThrottle / 256;
+    rf24OutData[5] = valueThrottle % 256;
+    rf24OutData[6] = valueYaw / 256;
+    rf24OutData[7] = valueYaw % 256;
+    // rf24OutData[0 à 7] = valeurs de 988 à 2011 en alternant valeur entière de la division par 256 et reste de la division par 256
+
+    //rappel: rf24OutData est un tableau de "byte" = 8-"bit"
+    bitWrite(rf24OutData[8], 0, aux1);
+    bitWrite(rf24OutData[8], 1, aux2);
+    bitWrite(rf24OutData[8], 2, 0);
+    bitWrite(rf24OutData[8], 3, 0);
+    // rf24OutData[8] = value Aux 1,2
+
+    // send data to rf module
+
+    long timestamp = millis();
+    do{
+        if (rf24.write(rf24OutData, rf24OutDataSize)) {
+            digitalWrite(signalLedPin, HIGH); // Si la fonction marche, allume la led
+        }
+        else {
+            digitalWrite(signalLedPin, LOW);
+        }
+    } while( millis() < timestamp + duration );
+}
+///////// END OF SENDDATA FUNCTION /////////////////
+
+
 
 void setup() {
     Serial.begin(115200);
@@ -112,70 +153,72 @@ void loop() {
     if (millis() % rf24WriteInterval != 0) {
         return;
     }
+    
+    if ( auxsState[ 3 ] == HIGH && count < 6) { // Compteur pour le nombre de pressions sur le bouton D
+      count ++ ;
+      delay(200);
+    } else if( auxsState[ 3 ] == HIGH && count == 6) {
+      count = 0;
+      delay(200);
+    }
+    
+    Serial.print("count :");
+    Serial.println(count);
+    
+    int joystickLeftY = constrain(analogRead(A0) + joystickLeftYOffset * joystickOffsetStep, 0, 1023); // Lecture de la position des Joysticks avec ajout du décalage
+    int joystickLeftX = constrain(analogRead(A1) + joystickLeftXOffset * joystickOffsetStep, 0, 1023);
+    int joystickRightY = constrain(analogRead(A2) + joystickRightYOffset * joystickOffsetStep, 0, 1023);
+    int joystickRightX = constrain(analogRead(A3) + joystickRightXOffset * joystickOffsetStep, 0, 1023);
 
+
+    int valueRoll, valuePitch, valueThrottle, valueYaw; //Roll : Roulis (inclnaison droite-gauche); Pitch : Aileron (inclinaison avant-arrière), Yaw : Dirrection droite-gauche, Throttle : Gaz
+
+    if (throttleHand == 0) { // Si es gaz sont à gauche
+        valueRoll = map(joystickRightY, 0, 1023, 1700, 1299); // Translation du range 0-1024 en 2011-988 Réduire la sensibilité en réduisant le range à droite et à gauche
+        valuePitch = map(joystickRightX, 0, 1023, 1700, 1299); // Réduire la sensibilité en réduisant le range à droite et à gauche
+        valueThrottle = map(joystickLeftX, 0, 1023, 2011, 988);
+        valueYaw = map(joystickLeftY, 0, 1023, 2011, 988);
+    }
+    else { // Si les gaz sont à droite
+        valueRoll = map(joystickLeftY, 0, 1023, 988, 2011); // Translation du range 0-1024 en 988-2011
+        valuePitch = map(joystickRightX, 0, 1023, 988, 2011);
+        valueThrottle = map(joystickLeftX, 0, 1023, 988, 2011);
+        valueYaw = map(joystickRightY, 0, 1023, 988, 2011);
+    }
+
+// sendData(valueRoll, valuePitch, valueThrottle, valueYaw, aux1, aux2, duration )
+
+    
     if( auxsState[ 2 ] == HIGH ){
-        // sendData( avec des valeurs fixées, 1200 );
-    }
-    else if( auxState[ 3 ] == HIGH ){
-        // sendData( avec des valeurs fixées, 1200 );
-    }
-    else{
-        int joystickLeftY = constrain(analogRead(A0) + joystickLeftYOffset * joystickOffsetStep, 0, 1023); // Lecture de la position des Joysticks avec ajout du décalage
-        int joystickLeftX = constrain(analogRead(A1) + joystickLeftXOffset * joystickOffsetStep, 0, 1023);
-        int joystickRightY = constrain(analogRead(A2) + joystickRightYOffset * joystickOffsetStep, 0, 1023);
-        int joystickRightX = constrain(analogRead(A3) + joystickRightXOffset * joystickOffsetStep, 0, 1023);
-
-        int valueRoll, valuePitch, valueThrottle, valueYaw; //Roll : Roulis (inclnaison droite-gauche); Pitch : Aileron (inclinaison avant-arrière), Yaw : Dirrection droite-gauche, Throttle : Gaz
-
-        if (throttleHand == 0) { // Si es gaz sont à gauche
-            valueRoll = map(joystickRightY, 0, 1023, 2011, 988); // Translation du range 0-1024 en 2011-988
-            valuePitch = map(joystickRightX, 0, 1023, 2011, 988);
-            valueThrottle = map(joystickLeftX, 0, 1023, 2011, 988);
-            valueYaw = map(joystickLeftY, 0, 1023, 2011, 988);
-        }
-        else { // Si les gaz sont à droite
-            valueRoll = map(joystickLeftY, 0, 1023, 988, 2011); // Translation du range 0-1024 en 988-2011
-            valuePitch = map(joystickRightX, 0, 1023, 988, 2011);
-            valueThrottle = map(joystickLeftX, 0, 1023, 988, 2011);
-            valueYaw = map(joystickRightY, 0, 1023, 988, 2011);
-        }
-        
-        sendData( valueRoll, valuePitch, valueThrottle, valueYaw, auxsState[ 0 ], auxsState[ 1 ] );
+        // sendData( avec des valeurs fixées min 988 mid 1500 max 2011 - Si <988 ou >2011 glitch ); 
+          sendData( valueRoll, valuePitch, valueThrottle -400, valueYaw, auxsState[ 0 ], auxsState[ 1 ], 200);
+          sendData( valueRoll, valuePitch, valueThrottle, valueYaw, auxsState[ 0 ], auxsState[ 1 ], 100 ); // Retour au control manuel en lieu et place d'un delay de 100 ms
+          sendData( valueRoll, valuePitch, valueThrottle +400, valueYaw, auxsState[ 0 ], auxsState[ 1 ], 200);
+    } else if( count == 1 ){
+        // sendData( avec des valeurs fixées, min 988, mid 1500, max 2011, sinon glitch );
+          sendData( valueRoll, valuePitch, valueThrottle, 2010, auxsState[ 0 ], auxsState[ 1 ], 1 );
+    } else if( count == 2 ){
+          sendData( valueRoll, valuePitch, valueThrottle, valueYaw, auxsState[ 0 ], auxsState[ 1 ], 0 ); // Retour au control manuel
+    } else if( count == 3 ){
+          sendData( valueRoll, valuePitch, valueThrottle, 988, auxsState[ 0 ], auxsState[ 1 ], 1 ); 
+    } else if( count == 4 ){
+          sendData( valueRoll, valuePitch, valueThrottle, valueYaw, auxsState[ 0 ], auxsState[ 1 ], 0 ); // Retour au control manuel
+    } else if( count == 5 ){
+          sendData( valueRoll, valuePitch, valueThrottle -500, valueYaw, auxsState[ 0 ], auxsState[ 1 ], 100);
+          sendData( valueRoll, valuePitch, valueThrottle, valueYaw, auxsState[ 0 ], auxsState[ 1 ], 100 ); // Retour au control manuel
+          sendData( valueRoll, valuePitch, valueThrottle +500, valueYaw, auxsState[ 0 ], auxsState[ 1 ], 100);
+          sendData( valueRoll, valuePitch-500, valueThrottle, valueYaw, auxsState[ 0 ], auxsState[ 1 ], 100);
+          sendData( valueRoll, valuePitch, valueThrottle, valueYaw, auxsState[ 0 ], auxsState[ 1 ], 100 ); // Retour au control manuel
+          sendData( valueRoll, valuePitch+500, valueThrottle, valueYaw, auxsState[ 0 ], auxsState[ 1 ], 100);
+          count ++ ;
+    
+    } else{
+          sendData( valueRoll, valuePitch, valueThrottle, valueYaw, auxsState[ 0 ], auxsState[ 1 ], 0 );  
     }
 }
 
-void sendData(int valueRoll, int valuePitch, int valueThrottle, int valueYaw, int aux1, int aux2, int duration = 0 ){
-    // rf24OutData est un array de bytes (octets, qui peut donc stocker une valeur de 0 à 255 )
-    // donc pour stocker des valeurs de 988 à 2011
-    rf24OutData[0] = valueRoll / 256; // on divise la valeur par 256 et on stocke la valeur entière
-    rf24OutData[1] = valueRoll % 256; // puis on stocke le reste de la division par 256
-    rf24OutData[2] = valuePitch / 256;
-    rf24OutData[3] = valuePitch % 256;
-    rf24OutData[4] = valueThrottle / 256;
-    rf24OutData[5] = valueThrottle % 256;
-    rf24OutData[6] = valueYaw / 256;
-    rf24OutData[7] = valueYaw % 256;
-    // rf24OutData[0 à 7] = valeurs de 988 à 2011 en alternant valeur entière de la division par 256 et reste de la division par 256
 
-    //rappel: rf24OutData est un tableau de "byte" = 8-"bit"
-    bitWrite(rf24OutData[8], i, aux1);
-    bitWrite(rf24OutData[8], i, aux2);
-    bitWrite(rf24OutData[8], i, 0);
-    bitWrite(rf24OutData[8], i, 0);
-    // rf24OutData[8] = value Aux 1,2
 
-    // send data to rf module
-
-    long timestamp = millis();
-    do{
-        if (rf24.write(rf24OutData, rf24OutDataSize)) {
-            digitalWrite(signalLedPin, HIGH); // Si la fonction marche, allume la led
-        }
-        else {
-            digitalWrite(signalLedPin, LOW);
-        }
-    } while( millis() < timestamp + duration );
-}
 
 // updateService is called 3000 times by second via FlexiTimer library
 void updateService() {
