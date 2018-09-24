@@ -113,7 +113,7 @@ void setup() {
             delay(500);
         }
     }
-    rf24.setPALevel(RF24_PA_MAX);
+    rf24.setPALevel(RF24_PA_MIN);
     rf24.setDataRate(RF24_1MBPS);
     rf24.setRetries(0, 15);
     rf24.openWritingPipe(rf24Address);
