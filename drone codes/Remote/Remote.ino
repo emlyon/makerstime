@@ -18,8 +18,6 @@
 // Modifier ici par l'addresse de votre drone
 const byte rf24Address[6] = { 'M', 'a', 'k', 'e', 'r' };
 
-const int throttleHand = 0; // Position commande des gaz, si 0 commande à gauche
-
 RF24 rf24 = RF24(9, 10); // Module de communication
 const int rf24OutDataSize = 9;
 byte rf24OutData[rf24OutDataSize];
@@ -56,7 +54,7 @@ const int joystickOffsetStep = 10;
 int count = 0; 
 
 ///////// SENDDATA FUNCTION /////////////////
-void sendData(int valueRoll, int valuePitch, int valueThrottle, int valueYaw, int aux1, int aux2, int duration = 0 ){
+void sendData(int valueRoll, int valuePitch, int valueThrottle, int valueYaw, int aux1, int aux1, int aux3, int duration = 0 ){
     // rf24OutData est un array de bytes (octets, qui peut donc stocker une valeur de 0 à 255 )
     // donc pour stocker des valeurs de 988 à 2011
     rf24OutData[0] = valueRoll / 256; // on divise la valeur par 256 et on stocke la valeur entière
@@ -72,7 +70,7 @@ void sendData(int valueRoll, int valuePitch, int valueThrottle, int valueYaw, in
     //rappel: rf24OutData est un tableau de "byte" = 8-"bit"
     bitWrite(rf24OutData[8], 0, aux1);
     bitWrite(rf24OutData[8], 1, aux2);
-    bitWrite(rf24OutData[8], 2, 0);
+    bitWrite(rf24OutData[8], 2, aux3);
     bitWrite(rf24OutData[8], 3, 0);
     // rf24OutData[8] = value Aux 1,2
 
@@ -133,18 +131,6 @@ void setup() {
     Serial.print(", Right X: ");
     Serial.println(joystickRightXOffset);
 
-    Serial.print("Throttle hand: ");
-    if (throttleHand == 0) {
-        Serial.println("left");
-    }
-    else {
-        Serial.println("right");
-    }
-    for (int i = 0; i < throttleHand + 1; i++) {
-        tone(tonePin, toneFrequency, toneDuration);
-        delay(200);
-    }
-
     FlexiTimer2::set(1, updateService); // call the updateService() function 3000 times per second
     FlexiTimer2::start();
 }
@@ -154,16 +140,17 @@ void loop() {
         return;
     }
     
-    if ( auxsState[ 3 ] == HIGH && count < 6) { // Compteur pour le nombre de pressions sur le bouton D
-      count ++ ;
-      delay(200);
-    } else if( auxsState[ 3 ] == HIGH && count == 6) {
-      count = 0;
-      delay(200);
+    if ( auxsState[ 3 ] == HIGH)
+    {
+        joystickLeftYOffset = 0;
+        joystickLeftXOffset = 0;
+        joystickRightYOffset = 0;
+        joystickRightXOffset = 0;
+        eepromWrite(0, 0);
+        eepromWrite(1, 0);
+        eepromWrite(2, 0);
+        eepromWrite(3, 0);
     }
-    
-    Serial.print("count :");
-    Serial.println(count);
     
     int joystickLeftY = constrain(analogRead(A0) + joystickLeftYOffset * joystickOffsetStep, 0, 1023); // Lecture de la position des Joysticks avec ajout du décalage
     int joystickLeftX = constrain(analogRead(A1) + joystickLeftXOffset * joystickOffsetStep, 0, 1023);
@@ -173,52 +160,13 @@ void loop() {
 
     int valueRoll, valuePitch, valueThrottle, valueYaw; //Roll : Roulis (inclnaison droite-gauche); Pitch : Aileron (inclinaison avant-arrière), Yaw : Dirrection droite-gauche, Throttle : Gaz
 
-    if (throttleHand == 0) { // Si es gaz sont à gauche
-        valueRoll = map(joystickRightY, 0, 1023, 1700, 1299); // Translation du range 0-1024 en 2011-988 Réduire la sensibilité en réduisant le range à droite et à gauche
-        valuePitch = map(joystickRightX, 0, 1023, 1700, 1299); // Réduire la sensibilité en réduisant le range à droite et à gauche
-        valueThrottle = map(joystickLeftX, 0, 1023, 2011, 988);
-        valueYaw = map(joystickLeftY, 0, 1023, 2011, 988);
-    }
-    else { // Si les gaz sont à droite
-        valueRoll = map(joystickLeftY, 0, 1023, 988, 2011); // Translation du range 0-1024 en 988-2011
-        valuePitch = map(joystickRightX, 0, 1023, 988, 2011);
-        valueThrottle = map(joystickLeftX, 0, 1023, 988, 2011);
-        valueYaw = map(joystickRightY, 0, 1023, 988, 2011);
-    }
+    valueRoll = map(joystickRightY, 0, 1023, 1700, 1299); // Translation du range 0-1024 en 2011-988 Réduire la sensibilité en réduisant le range à droite et à gauche
+    valuePitch = map(joystickRightX, 0, 1023, 1700, 1299); // Réduire la sensibilité en réduisant le range à droite et à gauche
+    valueThrottle = map(joystickLeftX, 0, 1023, 2011, 988);
+    valueYaw = map(joystickLeftY, 0, 1023, 2011, 988);
 
-// sendData(valueRoll, valuePitch, valueThrottle, valueYaw, aux1, aux2, duration )
-
-    
-    if( auxsState[ 2 ] == HIGH ){
-        // sendData( avec des valeurs fixées min 988 mid 1500 max 2011 - Si <988 ou >2011 glitch ); 
-          sendData( valueRoll, valuePitch, valueThrottle -400, valueYaw, auxsState[ 0 ], auxsState[ 1 ], 200);
-          sendData( valueRoll, valuePitch, valueThrottle, valueYaw, auxsState[ 0 ], auxsState[ 1 ], 100 ); // Retour au control manuel en lieu et place d'un delay de 100 ms
-          sendData( valueRoll, valuePitch, valueThrottle +400, valueYaw, auxsState[ 0 ], auxsState[ 1 ], 200);
-    } else if( count == 1 ){
-        // sendData( avec des valeurs fixées, min 988, mid 1500, max 2011, sinon glitch );
-          sendData( valueRoll, valuePitch, valueThrottle, 2010, auxsState[ 0 ], auxsState[ 1 ], 1 );
-    } else if( count == 2 ){
-          sendData( valueRoll, valuePitch, valueThrottle, valueYaw, auxsState[ 0 ], auxsState[ 1 ], 0 ); // Retour au control manuel
-    } else if( count == 3 ){
-          sendData( valueRoll, valuePitch, valueThrottle, 988, auxsState[ 0 ], auxsState[ 1 ], 1 ); 
-    } else if( count == 4 ){
-          sendData( valueRoll, valuePitch, valueThrottle, valueYaw, auxsState[ 0 ], auxsState[ 1 ], 0 ); // Retour au control manuel
-    } else if( count == 5 ){
-          sendData( valueRoll, valuePitch, valueThrottle -500, valueYaw, auxsState[ 0 ], auxsState[ 1 ], 100);
-          sendData( valueRoll, valuePitch, valueThrottle, valueYaw, auxsState[ 0 ], auxsState[ 1 ], 100 ); // Retour au control manuel
-          sendData( valueRoll, valuePitch, valueThrottle +500, valueYaw, auxsState[ 0 ], auxsState[ 1 ], 100);
-          sendData( valueRoll, valuePitch-500, valueThrottle, valueYaw, auxsState[ 0 ], auxsState[ 1 ], 100);
-          sendData( valueRoll, valuePitch, valueThrottle, valueYaw, auxsState[ 0 ], auxsState[ 1 ], 100 ); // Retour au control manuel
-          sendData( valueRoll, valuePitch+500, valueThrottle, valueYaw, auxsState[ 0 ], auxsState[ 1 ], 100);
-          count ++ ;
-    
-    } else{
-          sendData( valueRoll, valuePitch, valueThrottle, valueYaw, auxsState[ 0 ], auxsState[ 1 ], 0 );  
-    }
+    sendData(valueRoll, valuePitch, valueThrottle, valueYaw, auxsState[0], auxsState[1], auxsState[2], 0);
 }
-
-
-
 
 // updateService is called 3000 times by second via FlexiTimer library
 void updateService() {
