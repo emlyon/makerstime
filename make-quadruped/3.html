@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>make a quadruped</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+
+    <script src="js/isBrightspace.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h4>processing</h4>
+        <p>
+            Processing is a free development environment based on the Java platform.
+            This environment has been created for digital artists and graphic designers:
+            it allows to generate and manipulate 2D and 3D images, and to create interactive applications.
+            In our case we will use it to drive the robot with USB and wifi.
+        </p>
+        <p>
+            Programs created and used with Processing are called sketches or Sketches, they must all be stored in a folder called sketchbook.
+            By default your Sketchbook is called Processing and is located in your Documents folder.
+            If you can not find your folder you can find its location by going to <em>File &gt; Preferences</em>.
+        </p>
+        <p>
+            As for the Arduino IDE we must first install the libraries needed to control the robot.
+        </p>
+        <p>
+            Launch Processing then click on <em>Sketch &gt; Import a library &gt; Add a library</em>
+        </p>
+        <img src="img/image2.png" style="max-width: 100%;" />
+        <p>
+            In the <em>Contribution Manager</em> window, choose <em>ControlP5</em>, then click <em>Install</em>.
+            Copy to your Sketchbook the folder named <em>Processing</em> found in <em>MakersAcademy_Quadruped_Robot_Kit-master &gt; Processing &gt; Sketches</em>
+        </p>
+        <img src="img/image12.png" style="max-width: 100%;" />
+        <p>
+            Open the Processing file that is located in the folder you just copied <em>File &gt; Open &gt; Processing</em>
+        </p>
+        <p>
+            Then run the Sketch you just opened
+        </p>
+        <img src="img/image13.png" style="max-width: 100%;" />
+        <p>
+            The execution of the Sketch launches the interface of control of the robot, this one will allow you to calibrate it then to control its movements.
+        </p>
+        <img src="img/image41.png" style="max-width: 100%;" />
+    </div>
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="js/init.js"></script>
+</body>
+
+</html>
