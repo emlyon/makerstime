@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>make a quadruped</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
+
+  <script src="js/isBrightspace.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <h4>Using the remote control</h4>
+
+    <p>
+      Install the NRF24L01 module on the controller.
+    </p>
+
+    <p>
+      Connect the remote control to your computer by USB and then launch the Arduino IDE.
+      Open the Remote file in <em>File > Examples > FNQR > Default > Remote</em>
+    </p>
+    <img src="img/assembly/image33.png" style="max-width:100%;">
+
+    <p>
+      In Tools choose <em>Board Type > Arduino / Genuino Uno</em>, and in <em>Port</em> choose the port on which your board is
+      connected: the board name must appear in parenthesis. Check and then upload the sketch.
+    </p>
+
+    <p>
+      The remote control can be powered by the USB port of your computer or by a 9V battery.
+    </p>
+
+    <p>
+      Activate individually only one of the three switches S1-D4, S2-D3 et S3-D2:
+    </p>
+    <ul>
+      <li>S1-D4 + Joystick: movement of the robot (CONTROL)</li>
+      <li>S2-D3 + Joystick et POT2-A1: moves the body of the robot (MOVE BODY)</li>
+      <li>S3-D2 + Joystick: rotation of the body of the robot (MOVE BODY)</li>
+    </ul>
+    <img src="img/assembly/image42.png" style="max-width:100%;">
+
+    <p>
+      The robot is now finished, Congratulations!
+    </p>
+  </div>
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script src="js/init.js"></script>
+</body>
+
+</html>

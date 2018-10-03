@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>make a quadruped</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
+
+  <script src="js/isBrightspace.js"></script>
+</head>
+
+<body>
+  <div class="container">
+
+    <h4>Assembly of the robot</h4>
+
+    <p>
+      Begin by assembling the 4 disc steering arms (white discs) on the central plate, the discs will then be fixed
+      on the axes of the robot motors:
+    </p>
+    <ul>
+      <li>
+        Rotate disc steering arm so that its holes can aligned with the holes in
+        the acrylic plate.
+      </li>
+      <li>
+        Assemble with the M1.2x7 screws using the Phillips screwdriver
+      </li>
+      <li>
+        Proceed in the same way for the 3 other discs at the 3 other angles of the plate
+      </li>
+    </ul>
+    <img src="img/assembly/image27.jpg" style="max-width:100%;">
+    <img src="img/assembly/image8.jpg" style="max-width:100%;">
+
+    <p>
+      Repeat the operation for the 4 arms: there are 2 discs per arm, so it is necessary to assemble 8 discs.
+    </p>
+    <img src="img/assembly/image38.jpg" style="max-width:100%;">
+    <img src="img/assembly/image47.jpg" style="max-width:100%;">
+
+    <p>
+      Note the orientation of the disc: the support of the servomotor shaft must be towards the outside.
+    </p>
+
+    <p>
+      The plywood is a rather soft material: do not tighten too hard!
+    </p>
+
+    <p>
+      Assemble the servomotors on the legs:
+    </p>
+    <ul>
+      <li>Position the servomotor with the cable upwards</li>
+      <li>Assemble with 2 M2x10 screws and 2 M2 nuts using the Phillips screwdriver and key.</li>
+      <li>Repeat for the other 3 legs of the robot paying attention to their position: you must have 2 sets of 2 symmetrical legs.</li>
+    </ul>
+    <img src="img/assembly/image23.jpg" style="max-width:100%;">
+    <img src="img/assembly/image43.jpg" style="max-width:100%;">
+
+    <p>
+      Use your finger or a clamp to hold the nut when screwing. Check the orientation of the leg before screwing
+      in the servo motor.
+    </p>
+
+    <p>
+      Assemble 2 servomotors on each 3D printed support:
+    </p>
+    <ul>
+      <li>Use 1 M2x10 screws and 1 M2 nut for the first motor</li>
+      <li>Use 2 M2x10 screws and 2 M2 nuts for the second motor</li>
+      <li>Repeat for the other 3 supports, check the positions of the servo motors before screwing them in</li>
+    </ul>
+    <img src="img/assembly/image6.jpg" style="max-width:100%;">
+    <img src="img/assembly/image18.jpg" style="max-width:100%;">
+
+    <p>
+      Refer to the following picture for the position of the servo motors:
+    </p>
+    <img src="img/assembly/image30.jpg" style="max-width:100%;">
+
+    <p>
+      Screw the small spacers onto the center plate:
+    </p>
+    <ul>
+      <li>The spacers must be on the same side as the discs (see picture below)</li>
+      <li>Use 4 M3x8 screws to screw the 4 spacers</li>
+    </ul>
+    <img src="img/assembly/image25.jpg" style="max-width:100%;">
+    <img src="img/assembly/image21.jpg" style="max-width:100%;">
+
+    <p>
+      Place the controller on the small spacers and then screw the large spacers with the key. Do not over tighten!
+    </p>
+    <img src="img/assembly/image22.jpg" style="max-width:100%;">
+    <img src="img/assembly/image4.jpg" style="max-width:100%;">
+
+    <p>
+      Make sure that the USB cable is unplugged from the controller and the batteries are removed, then cable the servo motors:
+    </p>
+    <ul>
+      <li>Use ports 22-27 and 34-39, port numbers are shown on the top of the controller (opposite side to connectors)</li>
+      <li>Scrupulously observe the polarity of the servo motors: The yellow wire must be on the S, the red wire on the +, the black (or brown) wire on the -, the connectors also have a color code allowing you to locate yourself..</li>
+      <li>For the moment there is no connection order: you can connect the servomotors to any port from 22 to 27 and from 34 to 39, they will be configured in a second time</li>
+    </ul>
+    <img src="img/assembly/image19.png" style="max-width:100%;">
+    <p>
+      Controller seen from above: ports to be used, and seen from below: wiring of the servomotors,
+      the yellow wire towards the inside
+    </p>
+
+    <p>
+      Install the two batteries according to their polarity
+    </p>
+    <img src="img/assembly/image16.jpg" style="max-width:100%;">
+
+    <p>
+      Then turn on the controller
+    </p>
+    <img src="img/assembly/image3.jpg" style="max-width:100%;">
+
+    <p>
+      The servo motors will now be in their original position: wait until they have completed their cycle before proceeding
+      to the next steps. Do not take too long to carry out them, as the battery may be discharged (the motors must remain on)
+    </p>
+
+    <p>
+      Assemble with the screws the actuators mounted on the support in 3D printing on the plate: refer to the following pictures
+      for their positions.
+    </p>
+    <img src="img/assembly/image15.jpg" style="max-width:100%;">
+    <p>
+      Top view: note the orientation of the servo axes
+    </p>
+
+    <img src="img/assembly/image35.jpg" style="max-width:100%;">
+    <p>
+      Bottom view: note the orientation of the servo axes
+    </p>
+
+    <p>
+      Note the position of the rectangular leg of the part in 3D printing: this should always be in line with the axis
+      of the disc.
+    </p>
+
+    <p>
+      Be careful not to turn the servo motors: you risk losing their positioning.
+    </p>
+    <img src="img/assembly/image34.png" style="max-width:100%;">
+
+    <p>
+      Place the robot on a flat surface and then assemble the 4 arms as horizontally as possible.
+      Be careful not to turn the servo motors: you risk losing their positioning.
+    </p>
+
+    <p>
+      If the arms are not totally horizontal this is not disturbing at the moment: their deviation will be compensated
+      during the calibration of the robot.
+    </p>
+    <img src="img/assembly/image31.jpg" style="max-width:100%;">
+
+    <p>
+      Turn the robot over, then assemble the legs perpendicular to the arms.
+    </p>
+    <img src="img/assembly/image44.jpg" style="max-width:100%;">
+
+    <p>
+      In the same way as for the arms if the legs are not totally perpendicular their deviation will be compensated during
+      the calibration of the robot.
+    </p>
+
+    <p>
+      Turn off the robot and then carefully disconnect all the servomotors, you will wire them in their final configuration
+      according to the following diagram:
+    </p>
+    <img src="img/assembly/image24.png" style="max-width:100%;">
+
+    <p>
+      The port numbers are written on the front of the controller, scrupulously observing the connection polarity
+      of the servomotors: the yellow wire must always be on the side of the batteries.
+    </p>
+
+    <p>
+      Group the cables of each leg in groups of 3, then wrap the spiral tube around the three cables.
+      Allow sufficient length to prevent movement of legs
+    </p>
+    <img src="img/assembly/image45.jpg" style="max-width:100%;">
+    <img src="img/assembly/image26.jpg" style="max-width:100%;">
+    <img src="img/assembly/image32.jpg" style="max-width:100%;">
+
+    <p>
+      Use 4 M3x8 screws to secure the bottom plate to the large spacers
+    </p>
+    <img src="img/assembly/image20.jpg" style="max-width:100%;">
+
+    <p>
+      Be sure to insert each part in 3D printing in their pivot.
+    </p>
+
+    <p>
+      Attach the ESP8266 module to the controller
+    </p>
+    <img src="img/assembly/image7.png" style="max-width:100%;">
+
+    <p>
+      The assembly of the robot is finished, you will now calibrate it.
+    </p>
+  </div>
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script src="js/init.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>make a quadruped</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
+
+  <script src="js/isBrightspace.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <h4>Calibration</h4>
+
+    <p>
+      The ESP8266 module that you just installed allows you to communicate in wifi with the robot,
+      first turn it on and then connect your computer to WiFi at the <em>"Freenove Quadruped Robot"</em> access point.
+      The network key is <em>"Freenove"</em>.
+    </p>
+
+    <p>
+      Launch the Processing application, open the Sketch <em>"Processing"</em> that you installed at the beginning
+      of the tutorial and which can be found in your sketchbook.
+    </p>
+
+    <p>
+      Turn on the robot and then click <em>"run"</em> and then click <em>"CONNECT"</em> in the new command interface.
+    </p>
+
+    <p>
+      Select the <em>"CALIBRATION"</em> tab, the robot must move to the calibration position with the 4 legs up.
+    </p>
+    <img src="img/assembly/image40.png" style="max-width:100%;">
+
+    <p>
+      If you do not have the calibration guide, print it on an A4 sheet without changing its scale: the file is named
+      <em>"CalibrationGraph"</em> and is located in the folder you downloaded from the GitHub repository at the very beginning
+      of this tutorial. Place the robot on the calibration guide according to its orientation.
+    </p>
+    <img src="img/assembly/image1.jpg" style="max-width:100%;">
+
+    <p>Click on <em>"LEG1"</em> and then use the keys [A], [D], [S], [W], [R], and [F] on your keyboard to position the end
+      of the tab exactly on the corresponding black dot: [A] moves in +Y, [D] in -Y, [S] in + X, [W] in -X, [R] in + Z and [F]
+      in -Z. Repeat for all 4 legs then click <em>"CONFIRM"</em>.
+    </p>
+    <img src="img/assembly/image14.jpg" style="max-width:100%;">
+
+    <p>
+      If you are unable to calibrate your robot, this means that the legs have not been properly mounted: place the robot
+      on the back and click on <em>"INSTALLATION"</em>.
+    </p>
+    <img src="img/assembly/image39.png" style="max-width:100%;">
+
+    <p>
+      Carefully unscrew the bottom plate and align each of the tabs individually by unscrewing them and turning them
+      one by one according to the diagram above.
+    </p>
+
+    <p>
+      After this calibration the robot is now ready to take its first steps!
+    </p>
+
+    <p>
+      It can be controlled in three different ways:
+    </p>
+    <ul>
+      <li>Either from the processing application with the <em>"CONTROL"</em>, <em>"MOVE BODY"</em> and <em>"ROTATE BODY"</em> tabs</li>
+      <li>Using the Android app <a href="https://play.google.com/store/apps/details?id=com.freenove.suhayl.Freenove">"Freenove APP"</a></li>
+      <li>With the Arduino Remote</li>
+    </ul>
+  </div>
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script src="js/init.js"></script>
+</body>
+
+</html>

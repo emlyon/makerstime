@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>make a quadruped</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
+
+  <script src="js/isBrightspace.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <h4>Custom programming</h4>
+
+    <p>
+      You can now use Arduino to program defined movements to your robot.
+    </p>
+
+    <h5>Basic Program</h5>
+    <p>
+      Create a new Arduino program: Open Arduino and <em>File &gt; New</em><br>
+      <img style="max-width: 100%;" src="img/prog/0.jpg" />
+      <img style="max-width: 100%;" src="img/prog/1.jpg" />
+    </p>
+    <p>
+      Add FNQR library in order to access methods to initialize and move your robot: <em>Sketch &gt; Include library &gt; FNQR</em><br>
+      <img style="max-width: 100%;" src="img/prog/2.jpg" />
+      <img style="border: solid 1px black; max-width: 100%;" src="img/prog/3.jpg" />
+    </p>
+    <p>
+      Create a variable named "robot" with the FNQR type:<br>
+      <img style="border: solid 1px black; max-width: 100%;" src="img/prog/4.jpg" />
+    </p>
+    <p>
+      Then in setup, init your robot:<br>
+      <img style="border: solid 1px black; max-width: 100%;" src="img/prog/5.jpg" />
+    </p>
+    <p>
+      You now have the basic code to program the movements of your robot:
+    </p>
+    <pre style="border-radius: 3px; background: #e3e3e3; padding: 10px;"><code>#include &lt;FNQR.h&gt;
+      #include &lt;FNQRBasic.h&gt;
+      #include &lt;FNQRComm.h&gt;
+      #include &lt;FNQROrders.h&gt;
+      #include &lt;FNQRRemote.h&gt;
+
+      FNQR robot;
+
+      void setup() {
+        robot.Start();
+      }
+
+      void loop() {
+        // list of movements to be executed
+      }</code>
+    </pre>
+
+    <h5>Move the robot</h5>
+    <p>
+      The FNQR library provides you with various functions to program the movement of your robot, for example: <br />-
+      <span style="font-family: monospace; border-radius: 3px; background: #e3e3e3; padding: 0 5px;">robot.CrawlForward();
+      </span> makes your robot crawl forward.<br />-
+      <span style="font-family: monospace; border-radius: 3px; background: #e3e3e3; padding: 0 5px;">robot.CrawlBackward();</span>
+      makes your robot crawl backward.<br />-
+      <span style="font-family: monospace; border-radius: 3px; background: #e3e3e3; padding: 0 5px;">robot.TurnLeft();</span>
+      turns your robot 22.5&deg; to the left.<br />-
+      <span style="font-family: monospace; border-radius: 3px; background: #e3e3e3; padding: 0 5px;">robot.TurnRight();</span>
+      turns your robot 22.5&deg; to the right.
+    </p>
+    <p>
+      To move your robot by following a square you can use the following code:
+    </p>
+    <pre style="border-radius: 3px; background: #e3e3e3; padding: 10px;"><code>#include &lt;FNQR.h&gt;
+
+      FNQR robot;
+
+      void setup() {
+        robot.Start();
+      }
+
+      void loop() {
+        // advance 6 steps
+        robot.CrawlForward();
+        robot.CrawlForward();
+        robot.CrawlForward();
+        robot.CrawlForward();
+        robot.CrawlForward();
+        robot.CrawlForward();
+
+        // turn 4 times 22.5 &deg; clockwise (= 90 &deg;)
+        robot.TurnRight();
+        robot.TurnRight();
+        robot.TurnRight();
+        robot.TurnRight();
+      }</code>
+    </pre>
+    <p>
+      Since the loop function will repeat until the arduino extinguishes, when the robot finishes these 10 instructions,
+      it will repeat them again and again, moving in a square.
+    </p>
+    <p>
+      Using these methods, you can also rotate it round:
+    </p>
+    <pre style="border-radius: 3px; background: #e3e3e3; padding: 10px;"><code>#include &lt;FNQR.h&gt;
+
+      FNQR robot;
+
+      void setup() {
+        robot.Start();
+      }
+
+      void loop() {
+        // advance 3 steps
+        robot.CrawlForward();
+        robot.CrawlForward();
+        robot.CrawlForward();
+
+        // turn 22.5&deg; to the left
+        robot.TurnLeft();
+      }</code>
+    </pre>
+
+    <h5>Move your body!</h5>
+    <p>
+      There are 2 other methods to move only the central part of the robot, either by a translation or by a rotation of
+      the body on the x, y and z axes.<br>
+      <img style="max-width: 100%;" src="img/prog/quad_axis.png" />
+    </p>
+    <ul>
+      <li><span style="font-family: monospace; border-radius: 3px; background: #e3e3e3; padding: 0 5px;">robot.MoveBody( x, y, z );</span> allows a translation of the body of your robot where:<br /><span style="text-decoration: underline;">- x: translation on x axis, has to be a value between -30 and 30</span><br /><span style="text-decoration: underline;">- y: translation on y axis, has to be a value between -30 and 30</span><br /><span style="text-decoration: underline;">- z: translation on z axis, has to be a value between -15 and 45</span></li>
+      <li><span style="font-family: monospace; border-radius: 3px; background: #e3e3e3; padding: 0 5px;">robot.RotateBody(x, y, z, angle);</span> allows a rotation of the body of your robot where:<br /><span style="text-decoration: underline;">- x: rotation on x axis, can be either -1, 0 or 1</span> ( 0: no rotation on this axis; -1 or 1: direction of rotation on this axis)<br /><span style="text-decoration: underline;">- y: rotation on y axis, can be either -1, 0 or 1</span> ( 0: no rotation on this axis; -1 or 1: direction of rotation on this axis)<br /><span style="text-decoration: underline;">- z: rotation on z axis, can be either -1, 0 or 1</span> ( 0: no rotation on this axis; -1 or 1: direction of rotation on this axis)<br /><span style="text-decoration: underline;">- angle: has to be a value between 0 and 15</span></li>
+    </ul>
+    <p>
+      Here is an example combining these different methods, note the use of the
+      <span style="font-family: monospace; border-radius: 3px; background: #e3e3e3; padding: 0 5px;">delay</span>
+      function to make pauses between movements.
+    </p>
+    <pre style="border-radius: 3px; background: #e3e3e3; padding: 10px;"><code>#include &lt;FNQR.h&gt;
+
+      FNQR robot;
+
+      void setup() {
+        robot.Start();
+      }
+
+      void loop() {
+        robot.MoveBody(0, 0, 0);
+        robot.RotateBody(0, 0, 1, 15);
+        robot.RotateBody(0, 0, -1, 15);
+        robot.MoveBody(0, 0, 45);
+        delay( 500 );// make a small pause
+
+        robot.MoveBody(-30, 0, 0);
+        robot.MoveBody(0, 0, -15);
+        robot.MoveBody(30, 0, 0);
+        robot.MoveBody(0, 0, 45);
+
+        robot.MoveBody(-30, 0, 0);
+        robot.MoveBody(0, 0, -15);
+        robot.MoveBody(30, 0, 0);
+        robot.MoveBody(0, 0, 45);
+        delay( 500 );// make a small pause
+
+        robot.RotateBody(1, 1, 0, 15);
+        robot.RotateBody(1, -1, 0, 15);
+        robot.RotateBody(-1, -1, 0, 15);
+        robot.RotateBody(-1, 1, 0, 15);
+        delay( 500 );// make a small pause
+      }</code>
+    </pre>
+    <p>
+      You now have the different methods to move your robot. There are several examples in
+      <em>File &gt; Examples &gt; FNQR &gt; Examples</em>.
+      Open them and upload them in oder to learn how to use the FNQR library and control your robot.<br>
+      If you upload your own code, the robot will only be controlled by your code and you will not be able to
+      use the computer or the remote control to control it. You can resend the default sketch to re-use them.
+    </p>
+    <p style="background: #f66; padding: 20px;">
+      <b>We are now waiting for you with your robot programmed with your best moves for a big battle.<br>
+        Think of charging your batteries and be creative!
+    </p>
+  </div>
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script src="js/init.js"></script>
+</body>
+
+</html>

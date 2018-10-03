@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>make a quadruped</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
+
+  <script src="js/isBrightspace.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <h4>TinkerCAD</h4>
+    <p>
+      Using the plan supplied you will model in 3D with Tinkercad the support of the servos of the robot quadruped.
+    </p>
+    <p>
+      Tinkercad is a 3D modeling tool online: it allows the simple and intuitive creation of 3D models in your browser.
+      The resulting objects can be used in many applications, including 3D printing. This solution does not require installation,
+      to use it simply visit <a href="www.tinkercad.com" target="_blank">www.tinkercad.com</a>,
+      then create an account by clicking on "<em>register</em>" at the top right of the page.
+    </p>
+    <p>
+      Follow the steps required to create your account, if you already have an Autodesk account sign in with
+      your login credentials.
+    </p>
+    <img src="img/tinkercad/image14.png" style="max-width:100%;">
+    <p>
+      When you first open it, it is very likely that the software will invite you to follow a lesson on moving objects:
+      to skip this step you just have to click on the tinkercad logo at the top left of the screen.
+      You will find the dashboard of your account.
+    </p>
+    <img src="img/tinkercad/image28.png" style="max-width:100%;">
+    <p>
+      The tinkercad dashboard allows you to access the different features of the site: create, edit and share designs;
+      Create, edit and share electronic circuits, organize your designs into projects etc.
+    </p>
+    <p>
+      To start, we'll create a new design: Click <em>"create design"</em> under <em>"my recent designs"</em></em>.
+    </p>
+    <img src="img/tinkercad/image26.png" style="max-width:100%;">
+    <p>
+      Any changes you make will automatically be saved to your account, provided you are connected to the internet. You can return to your dashboard at any time by clicking on the Tinkercad logo at the top left. To take back a design you started just click
+      on <em>"edit"</em> in the preview thumbnail of your design.
+    </p>
+
+
+    <h4>The Tinkercad interface</h4>
+    <img src="img/tinkercad/image15.png" style="max-width:100%;">
+    <ul>
+      <li>1 - Editing tools: copy-paste, duplicate, delete, cancel, and restore</li>
+      <li>2 - Navigation: cubeview, zoom, extended view, orthogonal view</li>
+      <li>3 - Construction plans: reference surfaces for modeling</li>
+      <li>4 - Object properties: view, group, disassociate, align, reverse</li>
+      <li>5 - File exchange: import, export, share</li>
+      <li>6 - Modeling guides: construction plans, rules</li>
+      <li>7 - Object libraries: simple shapes, text, etc.</li>
+    </ul>
+
+
+    <h4>Navigation</h4>
+    <p>
+      To zoom in and out of the view you can use the scroll wheel, the [+] and [-] keys on your keyboard, or the + and -
+      navigation buttons on the left side of the interface.
+    </p>
+    <p>
+      To move in the view hold down the [Shift] key on your keyboard and then use the right click of your mouse.
+      Right-clicking only rotates the view.
+    </p>
+    <p>
+      The <em>cubeview</em> allows you to display predefined views by clicking on the faces, vertices, and edges of the cube.
+      You can return to the original view at any time by clicking the <em>"home"</em> button below the <em>cubeview</em>.
+    </p>
+
+
+    <h4>Construction grid</h4>
+    <p>
+      Before starting we will change the pitch of the grid to be able to model to 10th of mm: choose 0.1mm in the drop grid
+      drop menu in the bottom right of the construction plane.
+    </p>
+    <img src="img/tinkercad/image33.png" style="max-width:100%;">
+
+
+    <h4>Create and edit simple shapes:</h4>
+    <p>
+      In a first step we will model schematically a servomotor which will serve as a reference for the construction
+      of the support.
+    </p>
+    <img src="img/tinkercad/image6.png" style="max-width:100%;">
+    <p>
+      First, drag a box on the work plane from the shape library.
+    </p>
+    <img src="img/tinkercad/image10.png" style="max-width:100%;">
+    <p>
+      Select the box you just placed by clicking on it and then in the shape window to the right enter the following values:
+    </p>
+    <ul>
+      <li>- Radius: 0 (round radius of the edges of the box)</li>
+      <li>- Steps: 1 (rounding steps)</li>
+      <li>- Length: 11.6 mm</li>
+      <li>- Width: 24 mm</li>
+      <li>- Height: 19 mm</li>
+    </ul>
+    <img src="img/tinkercad/image20.png" style="max-width:100%;">
+    <p>
+      You can also change the dimensions by clicking on the white handles that appear around the selected object.
+    </p>
+    <p>
+      This box represents the body of the servomotor, we will now add two outlets on each of the two small faces,
+      these debars allow to fix the motor to the support.
+    </p>
+    <p>
+      Move to the view using the <em>cubeview</em> (click-drag or click on the predefined views) or right-click to display
+      the left side of the box.
+    </p>
+    <img src="img/tinkercad/image17.png" style="max-width:100%;">
+    <img src="img/tinkercad/image29.png" style="max-width:100%;">
+    <p>
+      Place a construction plane on the left side of the box by sliding it from the right menu.
+    </p>
+    <img src="img/tinkercad/image24.png" style="max-width:100%;">
+    <p>
+      Then do the same to place a ruler on the bottom left corner of the face.
+    </p>
+    <img src="img/tinkercad/image27.png" style="max-width:100%;">
+    <p>
+      Be careful to place the rule: it must be precisely aligned with the cube: zoom as much as possible on the center
+      of the ruler (black circle) then reposition it on the corner of the box (click and drag).
+    </p>
+    <img src="img/tinkercad/image18.png" style="max-width:100%;">
+    <p>
+      <em>Incorrect alignment of rule</em>
+    </p>
+    <img src="img/tinkercad/image2.png" style="max-width:100%;">
+    <p>
+      <em>Correct alignment</em>
+    </p>
+    <p>
+      It may also be that your box is not perfectly aligned with the grid: if it is, simply place it in the view
+      (click and drag) and then reposition the ruler.
+    </p>
+    <p>
+      The rule you just placed will allow us to position the border on the face.
+    </p>
+    <p>
+      Drag a box onto the work plane and set its dimensions:
+    </p>
+    <ul>
+      <li>Radius: 0</li>
+      <li>Steps: 1</li>
+      <li>Length: 1.8 mm</li>
+      <li>Width: 11.6 mm</li>
+      <li>Height: 4.3 mm</li>
+    </ul>
+    <img src="img/tinkercad/image4.png" style="max-width:100%;">
+    <p>
+      Place the box at 0.00 of the vertical ruler and at 13.7 of the horizontal ruler: click on the white boxes
+      to set the values.
+    </p>
+    <p>
+      Next step: Place the fixing screw hole on the edge.
+    </p>
+    <p>
+      Place a construction plane on the top side of the border and then move the ruler to position it on the lower left corner
+      of the face, click the center of the ruler to rotate it. Zoom in for more precision and make sure the ruler aligns.
+    </p>
+    <img src="img/tinkercad/image30.png" style="max-width:100%;">
+    <img src="img/tinkercad/image32.png" style="max-width:100%;">
+    <p>
+      From the shape library drag a cylinder to the construction plane, specify 2.1mm for width and length and 8mm for height.
+      Position the bottom of the cylinder at -7mm from the work plane and place it at 1.2mm from the width rule and 4.7mm
+      from the length rule. Enter the values by clicking on the white boxes: if necessary, refer to the following image.
+    </p>
+    <img src="img/tinkercad/image31.png" style="max-width:100%;">
+    <p>
+      In Tinkercad all objects can be either solids or holes: define the cylinder as <em>Hole</em> in the <em>Form</em> window.
+    </p>
+    <img src="img/tinkercad/image23.png" style="max-width:100%;">
+    <img src="img/tinkercad/image25.png" style="max-width:100%;">
+    <p>
+      The cylinder will change its appearance and will be displayed in hatch.
+    </p>
+    <p>
+      Add the border to the selection by holding down the Shift key on your keyboard, then group the two objects
+      by clicking on group at the top right of the view or by pressing <em>[Ctrl]+[G]</em>. The drilling is now complete.
+    </p>
+    <img src="img/tinkercad/image7.png" style="max-width:100%;">
+    <img src="img/tinkercad/image12.png" style="max-width:100%;">
+    <p>
+      Now we'll duplicate the border on the other side of the engine body, select it, and then click <em>duplicate</em>.
+      Then move the duplicate border 28.28mm lengthwise by entering the value as before.
+    </p>
+    <img src="img/tinkercad/image11.png" style="max-width:100%;">
+    <img src="img/tinkercad/image8.png" style="max-width:100%;">
+    <p>
+      Group all three solid (both borders and body), select them one by one by holding the Shift key on your keyboard,
+      and then click <em>group</em> or press <em>[Ctrl]+[G]</em>.
+    </p>
+    <img src="img/tinkercad/image19.png" style="max-width:100%;">
+    <p>
+      The schematic modeling of the servomotor is now complete, we will reposition it and then duplicate it
+      to create the second motor which will also be integrated in the support.
+    </p>
+    <p>
+      First, replace the original construction plane by dragging a construction plane anywhere in the view outside
+      of your 3D model. Reposition the ruler, this time on the lower right corner of the actuator body,
+      as in the previous steps make sure it is positioned correctly by zooming in on the view.
+    </p>
+    <img src="img/tinkercad/image13.png" style="max-width:100%;">
+    <p>
+      Select the motor and rotate it 180 ° in the direction of the width by clicking on the black arrows of rotation:
+    </p>
+    <ul>
+      <li>1. Axis of rotation in the direction of the width</li>
+      <li>2. Axis of rotation in the direction of the length</li>
+      <li>3. Axis of rotation in the direction of the height</li>
+    </ul>
+    <img src="img/tinkercad/image5.png" style="max-width:100%;">
+    <p>
+      The two concentric circles that appear allow you to define the rotation increments: if during the rotation your pointer
+      is outside the circles the increments will be 1 °, inside them will be 22.5 °. Holding the Shift key will change to 45 °.
+    </p>
+    <p>
+      Enter the rotation angle in the dialog box or rotate with the mouse.
+    </p>
+    <img src="img/tinkercad/image34.png" style="max-width:100%;">
+    <p>
+      Click <em> duplicate</em> or press <em>[Ctrl]+[D]</em>.
+    </p>
+    <p>
+      Position the second motor at 11mm from the first in the width direction, enter the value on the construction rule.
+    </p>
+    <img src="img/tinkercad/image22.png" style="max-width:100%;">
+    <p>
+      Rotate the motor you have just copied at -90 ° in the width direction.
+    </p>
+    <img src="img/tinkercad/image9.png" style="max-width:100%;">
+    <p>
+      Then reposition it on 0.00 in width and -4.3 in height.
+    </p>
+    <img src="img/tinkercad/image16.png" style="max-width:100%;">
+    <p>
+      The servomotors are in their final position.
+    </p>
+    <p>
+      In the next step you will model the support that will be printed in 3D using the different tools that you have just seen.
+    </p>
+    <p>
+      Here are 3D renderings of the result you need to get.
+    </p>
+    <img src="img/tinkercad/image1.png" style="max-width:100%;">
+    <img src="img/tinkercad/image3.png" style="max-width:100%;">
+    <img src="img/tinkercad/image21.png" style="max-width:100%;">
+    <p>
+      You can view this model in 3D by following this link:<a href="http://a360.co/2vYmzKM">http://a360.co/2vYmzKM</a><br>
+      If you are prompted for a password, enter "EarlyMaker"
+    </p>
+    <p>
+      The following plan contains all the dimensions that can be useful to you during this exercise: so that the modeled piece
+      is fully functional, be sure to respect them.
+    </p>
+    <p>
+      You can view a more detailed plan by following this link: <a href="http://a360.co/2vXYZ0B">http://a360.co/2vXYZ0B</a>
+    </p>
+    <p>
+      Proceed by sub-assemblies and build with simple shapes that you group as you go: you can group objects already forming
+      a group. Always use the ruler, making sure it is positioned correctly each time you move it.
+    </p>
+    <p>
+      Once your model is completed, you can download it to print it in 3D.
+    </p>
+  </div>
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script src="js/init.js"></script>
+</body>
+
+</html>
