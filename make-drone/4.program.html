@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>make a drone</title>
+
+	<!-- CSS  -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" rel="stylesheet">
+	<link href="css/style.min.css" rel="stylesheet">
+
+	<script src="js/isBrightspace.js"></script>
+
+</head>
+
+<body>
+	<div class="container">
+		<div class="card-panel ">
+			<h4>program your controller & your receiver</h4>
+			<h5><i class="inline-icon material-icons">access_time</i> 1 hour</h5>
+			<br>
+			<h5>1. Downloading the code</h5>
+			<div class="card-action">
+				Let's start by downloading the code that we are going to upload to the drone and the wireless receiver.<br>
+				<blockquote>
+					Download this <a target="_blank" href="https://github.com/emlyon/makerstime/releases/download/v1/code.makerstime.zip">zip file</a>
+				</blockquote>
+			</div>
+		</div>
+
+		<div class="card-panel">
+			<h5>2. Preparing your computer for the following steps</h5>
+		   <blockquote>
+					<b>If you are on a Makers' Lab computer you can go directly to part 3, everything is already installed ;)</b>
+			</blockquote>
+			<p class="card-action">
+				First, download and install the Arduino IDE from the <a target="_blank" href="https://www.arduino.cc/en/Main/Software">official website</a>. This software enables us to prepare the code and upload it to the different electronic cards.
+			</p>
+			<p class="card-action">
+				Now we need to install the libraries used by the drone and receiver source code. A library is a collection of functions that simplify writing code.<br>
+				The two libraries we need are in the zip file you just downloaded.
+			</p>
+			<p>
+				<blockquote>
+				To install them, just copy them<br>
+				<b>On MacOS: </b>Documents/Arduino/libraries<br>
+				<b>On Windows: </b>My Documents/Arduino/libraries
+				<img src="ressources/prog/01.gif" width="100%">
+				</blockquote>
+			</p>
+			<p class="card-action">
+				Finaly, we have to install the driver for the small USB > Serial converter than we will use to connect the wireless receiver to your computer.
+			</p>
+			<p>
+				<blockquote>
+					Download and install <a target="_blank" href="https://github.com/emlyon/makerstime/releases/download/v1/drivers.CH340.zip">this file</a>
+				</blockquote>
+			</p>
+		</div>
+
+		<div class="card-panel">
+			<h5>3. Programming the remote</h5>
+			<p>
+				We are going to give an adress (a name if you prefer) to your drone for wireless communication. We are going to program the remote first.
+			</p>
+			<blockquote>
+				Open in the Arduino IDE the file <b>Remote.ino</b> located in the Remote folder
+			</blockquote>
+			<p>
+				Look for the line starting with<br>
+				const byte rf24Address[6]
+			</p>
+			<p>
+				To make sure we don't give the same adress twice, please use the first four letters of your last name + the first letter of your nickname as an address.
+			</p>
+			<blockquote>
+				For example: Pierre Dupont will use <br>
+				const byte rf24Address[6] = { 'D', 'u', 'p', 'o', 'P' };
+				<img src="ressources/prog/02.gif" width="100%">
+			</blockquote>
+
+			<p>
+				That's all for the code!
+			</p>
+			<blockquote>
+				Now plug the remote using an USB A cable (the blue one).
+			</blockquote>
+			<blockquote>
+				Select the remote in the Arduino IDE using <b>Tool > Port</b>.
+				<img src="ressources/prog/03.gif" width="100%">
+			</blockquote>
+			<p>
+				Make sure the right board type is selected (Arduino / Genuino Uno).
+			</p>
+			<blockquote>
+				Now click on <b>Upload</b>
+				<img src="ressources/prog/04.gif" width="100%">
+			</blockquote>
+			<p>
+				If you did everything correctly the message "Done uploading" should appear. You can now <b>unplug the remote</b>.
+			</p>
+		</div>
+		<div class="card-panel">
+			<h5>4. Programming the receiver</h5>
+			<blockquote>
+				We are now going to program the small wireless receiver that will be plugged into your drone. That's this small card that will receive the command from the remote. Therefore, we have to program it with the adress too!
+			</blockquote>
+			<p>
+				Open the file <b>Receiver.ino</b> located in the Receiver folder. And modify the adress the same way you did with the remote (put the same address obviously ;)
+			</p>
+			<blockquote>
+				Connect the receiver to the USB converter (be careful to not plug it backward !). Then plug everything to your computer using a micro-USB cable (the black one) as shown in the following video.<br>
+				<img src="ressources/prog/05.gif" width="100%">
+			</blockquote>
+			</p>
+			<p>
+				As you did for the remote, select the board in Tool > Board. And this time make sure <b>Arduino Pro or Pro Mini</b> is selected.
+				<blockquote>
+					If you can't find your board, make sure you installed the CH340 driver (refer to part 2 "Preparing your computer" for the installation link).
+				</blockquote>
+			</p>
+			<p>
+				Now click on "Upload" and wait for the upload to complete.
+			</p>
+			<blockquote>
+				Don't unplug the receiver yet, we are going to test everything.
+			</blockquote>
+		</div>
+		<div class="card-panel">
+			<h5>5. Testing everything !</h5>
+			<div>
+				Turn on your remote, if you did everything correctly, a yellow light will turn on (blinking or continuous) on your remote AND on your receiver.
+				<img src="ressources/prog/06.gif" width="100%">
+			</div>
+			<p>
+				Now it's time to put the receiver on the drone. Plug the 3 pins of the receiver on the drone : make sure it's not backward, the receiver must be over the drone's board and not over the void.<br>
+			</p>
+			<p>
+				Congratulations, you're done for this part. Fly safe !<br>
+			</p>
+			</div>
+		</div>
+
+	<!--  Scripts-->
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+	<script src="js/init.js"></script>
+
+</body>
+
+</html>
